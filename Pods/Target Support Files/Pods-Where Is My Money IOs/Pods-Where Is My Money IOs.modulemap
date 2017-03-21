@@ -1,0 +1,6 @@
+framework module Pods_Where_Is_My_Money_IOs {
+  umbrella header "Pods-Where Is My Money IOs-umbrella.h"
+
+  export *
+  module * { export * }
+}

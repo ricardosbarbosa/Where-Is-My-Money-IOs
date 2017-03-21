@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Where_Is_My_Money_IOs : NSObject
+@end
+@implementation PodsDummy_Pods_Where_Is_My_Money_IOs
+@end

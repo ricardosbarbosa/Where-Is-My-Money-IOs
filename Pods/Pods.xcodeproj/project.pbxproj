@@ -1,0 +1,2019 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00775D1F6E10FF89AC1995902220FB6C /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C87A46F77211C3F2E1061F30E5505 /* LayoutConstraint.swift */; };
+		012838AC040201C91A20A10869293560 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A6D4943686AEB96E7962A12F88A3D /* LayoutConstraintItem.swift */; };
+		012867047EF7E1D5E2A5FF51AE39BCA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		019E2956A118B92CEA3A19AC8CE30147 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA8E90C2C2FF5A73DB5D652EC6818 /* ConstraintRelatableTarget.swift */; };
+		082295C80B9E2E0FA8FE5D12912C1CF1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49DDCCBA7BF10DF05C463A4FE5D7B92 /* ConstraintView+Extensions.swift */; };
+		08FEA95758067CF9961FF45EE081557C /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D90B767ABFCF23F2E4C11D58C7B880C /* ConstraintInsetTarget.swift */; };
+		0F3F7940127E78F0CAB07EB41C75B2CF /* GearRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F7AF7E95D9FEEF083D5F9D8F83E0E /* GearRefreshControl.swift */; };
+		118BD1CD33F8D70DA9591C3B233B7F04 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDCD5E16D797F8A75AB8C4D76FCDA50 /* ConstraintPriorityTarget.swift */; };
+		1229DB5A6E42A5518484A959698E5868 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C6E9A0CDC73DBA1C9F11BD943077F /* ConstraintAttributes.swift */; };
+		14AAC3F937E2885ED92EE6795CD1370D /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C65B86D54E72D6F127308D9319F06 /* ConstraintConstantTarget.swift */; };
+		18B383B9D89E29BEF6379C7DDCE7D646 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4172C7AFB524D41DFFE2F18C16D7AF /* Constraint.swift */; };
+		1C07A3BD3D48293C03CF496B47A3D966 /* KCFABWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413620B7C97091583FDE5612263A0688 /* KCFABWindow.swift */; };
+		2B19A1F9192ACDD21BE0821FF60FB594 /* BigGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE72AD67C1DFA2D12F57A68C98623D1 /* BigGear.swift */; };
+		2B239C361D365E807CD2D80E413E7977 /* PermissionScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ED821395073F40BAF367F574903F62 /* PermissionScope-dummy.m */; };
+		2EED328974E4F8B74E870926FAFA6658 /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F51386ED3F4AC9B6BDB448171E00F /* RAMPaperSwitch.swift */; };
+		2F59631074881FDC26F0379E184B8A39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2FE35FBD065961FEB5EE511825D6FB77 /* GearRefreshControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2896DFE5668F071A2BD479BE5D35195A /* GearRefreshControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		32A1B4E6FE82AA9B60478890BA5265B9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EACA0002C827BFADF1C02FCD1EA3444 /* ConstraintDescription.swift */; };
+		35E8CA67DEC919A6152AE88CFBADC41E /* KCFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0791A11D56B9CF222DEF6A53B19D369C /* KCFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35EC1FD9592E685E4701ABED767E30F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		37D059B636FED6928615FD45BAB54EC2 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D6B5BF449322F65BAA16D29E043DF /* ConstraintDSL.swift */; };
+		3C049DD110DE86B477B31E96D86F57DB /* KCFABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743D854C2A3921BBAC153B8F898BAD3C /* KCFABViewController.swift */; };
+		3F8F8A2113FAEF6593F949D33983E345 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9364E8B45B2874FF5674AF45E77B6331 /* ConstraintOffsetTarget.swift */; };
+		4816D8CCCD8C33776257F4692392F00F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C186B85F4DC3501AD2DDEDEFB35C2 /* ConstraintItem.swift */; };
+		4E298ED23E4346A82D1846021A4F7C68 /* GearRefreshControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69253F97841F98D07918316E88847611 /* GearRefreshControl-dummy.m */; };
+		4FD14E5292F5877A7E595645A10F7692 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF0305F628E2278E6B4BE2F95686C0 /* ConstraintMakerExtendable.swift */; };
+		501EF00F60418835238CC0A9A4B990FA /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FF1D26363DD05CE9577D50683C779 /* SnapKit-dummy.m */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 642E7A50BABE5C327A785EAF01EB3FA7 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56E5DAB636BB46BB02F289E08DE98156 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		581BD867F7315D72D54D2BC0E7B4EC47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		58CB26D2FB8723CF32BF178C884627D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5A791AB30368E7CE838E6C85A8ED97E6 /* Pods-Where Is My Money IOsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A294F7385044AC1225F5DC943E96DFA8 /* Pods-Where Is My Money IOsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FE835E94A4794A306F321665ADC0259 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9ACCA6F53828B3E3AC1A2EB19360F0 /* ConstraintViewDSL.swift */; };
+		60EA48BFFF77234CA2729047989B2361 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31741020F89B4840FEDD44745610A6CE /* ConstraintInsets.swift */; };
+		63B8B22A469C46F34C1487DB6D285340 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70CCF4A97C8555EAAD33BD4D004CE5 /* ConstraintMakerFinalizable.swift */; };
+		64B1A40419F5B2AE246F7E7202E3F307 /* Pods-Where Is My Money IOs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 096D02751FD533377012AA65EB638128 /* Pods-Where Is My Money IOs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64BEC014A17388075F95C5D0A00DF662 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EA7B99C72E0DFC65D82EAD3475F28 /* ConstraintLayoutGuide.swift */; };
+		6BB9C5C597B52FF4B3B1C55D25401608 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DFF5F32697593B5A7F6BB31835ABA /* UILayoutSupport+Extensions.swift */; };
+		6C7329B87F8DC63AFD3B2F890ED42BBF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9F4F12CE83F1ED6259F9872E9304B /* Extensions.swift */; };
+		6F788DDA2F4F304C9F367DD40C2B919F /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 701ADB1A27855D398F656B5565B39EBE /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7277CDC592A7850556DC9AC1DA58F39D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B075F5CE19AA98EDF2DD95C91EE137 /* ConstraintMaker.swift */; };
+		7A37BB5C6635E0E90E68F1E7C10B763D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0AB08619BED5D09B65344189338E /* Debugging.swift */; };
+		7AEC4D4357DACF46689436014E0F1CC2 /* KCFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CEC1B46423C108FB514354475BE4F /* KCFloatingActionButton-dummy.m */; };
+		818DF3B5D6349A356EC61B5EA7561649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A38F3742A9CE7E86EA7878C7F6B7035 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82A08A1DCB16B672F44FED30312DD24C /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11520C052E54A763595911058D9E38 /* ConstraintLayoutSupportDSL.swift */; };
+		8501A27C682DB79FFDBB9185C8AAD4DD /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B6503F1F7B1CFFE31507DD129C9761 /* ConstraintConfig.swift */; };
+		87A24C2737B5D23AABE71D1F22D3277F /* PermissionScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F640294D3F88587335C36B3053DA82 /* PermissionScope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95B0FF4DB6AFB09432AED921C9B38ECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		97A90361FAF9C6F84A117E684D2FDC03 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F44F43F125B7EB6E65EE1200FE3FE1 /* ConstraintView.swift */; };
+		A1262EE3752352BA98C25DE05307B675 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30239C2ED3F0B64FF513AF5D937488F3 /* ConstraintMultiplierTarget.swift */; };
+		A7214CEE6536703CF3A4D3E68C2B58F8 /* RAMPaperSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E03A22DA77573069A83236D68E05C /* RAMPaperSwitch-dummy.m */; };
+		AA3CF211042046FD835628208F7ACA67 /* Pods-Where Is My Money IOs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 702CF3B1572F2D6BFBABA40CC94CCC8A /* Pods-Where Is My Money IOs-dummy.m */; };
+		B20E2D0F162E88B824F72EC7ADD275EF /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B429F367C8E790D858518A2A5B594FAF /* ConstraintMakerRelatable.swift */; };
+		B437547B545DA318C279F92D7B7C4AEC /* RAMPaperSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AD2E04FCE335927E33451B52C342D0 /* RAMPaperSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFCDD1CF2A905A41B0256B25DC3797A /* Pods-Where Is My Money IOsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9BE5224F5854563015D81B14B7BB65 /* Pods-Where Is My Money IOsUITests-dummy.m */; };
+		BCEE9983DF091349B5EE3F241A4D99EF /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528C56138545FFAF1E3CDA785D8B988 /* Permissions.swift */; };
+		BEFB286F797B17C412B2E0914B70F331 /* KCFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D152CF9F075D35D67CB90A9D1A8143 /* KCFloatingActionButton.swift */; };
+		CA5B741B804A4000362D5314712DAD8E /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC37407DDFB7828266DBAA119B87F03 /* ConstraintMakerEditable.swift */; };
+		CD1B6D4775D200E43E6DD3058BCF758E /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E72251C904A1A50598CFD256A60BA1 /* ConstraintLayoutSupport.swift */; };
+		CD6F705538BCD119DA4AE3F2B9255F31 /* KCFloatingActionButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA951FA0ABAF7A5612FE72D7D61FC51 /* KCFloatingActionButtonItem.swift */; };
+		D36560F3B1E28CA5755993984B3A51FC /* MainGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CFE18B9FB4FE37F87BB431C38FBB38 /* MainGear.swift */; };
+		D67DB0D45C517BF8279A119C812D27B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A8DEBB2DBA4DF4EB23C117A3E865BB /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0B6B85DAC505C54BE3663E790813241 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E999DE68C9024D5AFD549BCA4A3BC98 /* ConstraintRelation.swift */; };
+		E25E47552F702A7E3E21FD9E8CB5F5AA /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C795891001E193D17477F66177D66A /* ConstraintLayoutGuideDSL.swift */; };
+		E45DF200A360CF9307647D9788A03DE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F43D53D31E648774F22B1CF51237725 /* Constants.swift */; };
+		E75F0315FD87D64F7F8A0A0140007960 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0897AA4F94C427635DBC11E84653CDC7 /* Structs.swift */; };
+		E772E0C7C00E05ABF013990D41289D65 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6E5D4DBB2AEF41280813A68A6AADB /* ConstraintMakerPriortizable.swift */; };
+		E77AF7F8FD85AABB76CF219752C37088 /* Pods-Where Is My Money IOsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1962764F93E244470FDC1461427AC8 /* Pods-Where Is My Money IOsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E80F184AFC57C3EB80FEBBF9A641D14E /* KCFABManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A86567DF297E1F391A49D8F185183FF /* KCFABManager.swift */; };
+		EAF836588911B032B0BF601A416961AD /* PermissionScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB45E2663DBA3B0C3615855AA2C0BE /* PermissionScope.swift */; };
+		F324A9D36FF23AD6B696775E75C2D75D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF70380D790D8065584C14EEEC7AB /* ConstraintLayoutGuide+Extensions.swift */; };
+		F62964926FFCBE4046DD63AA003BA3AB /* Pods-Where Is My Money IOsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8473140273D1BBC8225FB3FD58F58CD /* Pods-Where Is My Money IOsTests-dummy.m */; };
+		F64DE616FF0621E0DBE963A660B4C86C /* KCFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F36FF85DFD953FC0947E21D15FC229 /* KCFloatingActionButtonDelegate.swift */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAAF9341F4E1E666FB7E98D0B54BFF6 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE04AEA247A9A4CAB59E4B985244185F /* GoogleToolboxForMac-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D6E6C60DC42E2D3227981757C08CFC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E9CEC9E5ACFE69D21456CCB70BEEA0;
+			remoteInfo = KCFloatingActionButton;
+		};
+		36E3F7F6A06C63BE2FF9DFDDAFCBE7BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A925CDEC53B420CA7EE1AA1CAEEC0DF4;
+			remoteInfo = SnapKit;
+		};
+		6F5B38937B587BBCD4179E8D0F0B99B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0751C1FED7E5020F6528A8B64693F489;
+			remoteInfo = GearRefreshControl;
+		};
+		7C9BDFDF1712FE8D0B494B65717F91B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		9C93A7D8CA2FCF7D1FF47A3523C95DF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C347B6F71B2F629721838067FE6C58;
+			remoteInfo = RAMPaperSwitch;
+		};
+		BFC9DAB57D44CCF9763F1735B9F56FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D973DBB3FF803A3BAC3F870E70F87628;
+			remoteInfo = PermissionScope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006C7EBA81CBCFC6A62FCB898E7BD985 /* Pods-Where Is My Money IOsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Where Is My Money IOsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		024D69A6294CC70E6B61743FB3045BB0 /* Pods-Where Is My Money IOsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOsTests-frameworks.sh"; sourceTree = "<group>"; };
+		03C4219B71C7DBF5D8E67EFEE83C36B0 /* GearRefreshControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GearRefreshControl.framework; path = GearRefreshControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0791A11D56B9CF222DEF6A53B19D369C /* KCFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KCFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		07983A767585CE451D9217CAA628595C /* KCFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KCFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		07F44F43F125B7EB6E65EE1200FE3FE1 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		0897AA4F94C427635DBC11E84653CDC7 /* Structs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = PermissionScope/Structs.swift; sourceTree = "<group>"; };
+		096D02751FD533377012AA65EB638128 /* Pods-Where Is My Money IOs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Where Is My Money IOs-umbrella.h"; sourceTree = "<group>"; };
+		0A86567DF297E1F391A49D8F185183FF /* KCFABManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFABManager.swift; path = Sources/KCFABManager.swift; sourceTree = "<group>"; };
+		0A9ACCA6F53828B3E3AC1A2EB19360F0 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		0D2FF1D26363DD05CE9577D50683C779 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		0EACA0002C827BFADF1C02FCD1EA3444 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		118D5582CA73231E19DEFA02B56E1C6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EFF70380D790D8065584C14EEEC7AB /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		127703A75582BC08E5A42CBBE7053800 /* PermissionScope.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PermissionScope.xcconfig; sourceTree = "<group>"; };
+		148F097516DC754CECCBD86CB6126354 /* Pods_Where_Is_My_Money_IOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Where_Is_My_Money_IOs.framework; path = "Pods-Where Is My Money IOs.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B4103C39BBBE9FD45A548B32902D37 /* Pods-Where Is My Money IOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOs.debug.xcconfig"; sourceTree = "<group>"; };
+		1BA951FA0ABAF7A5612FE72D7D61FC51 /* KCFloatingActionButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFloatingActionButtonItem.swift; path = Sources/KCFloatingActionButtonItem.swift; sourceTree = "<group>"; };
+		1E52760866C2DAAF00D145B675D62F10 /* Pods-Where Is My Money IOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOs.release.xcconfig"; sourceTree = "<group>"; };
+		20C795891001E193D17477F66177D66A /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		232371E479C7E6199CD9F21007850C18 /* Pods-Where Is My Money IOsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOsTests.release.xcconfig"; sourceTree = "<group>"; };
+		2619EFB2F86CBD1DE7848BA184CF6892 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		2896DFE5668F071A2BD479BE5D35195A /* GearRefreshControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GearRefreshControl-umbrella.h"; sourceTree = "<group>"; };
+		2A38F3742A9CE7E86EA7878C7F6B7035 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		2AC37407DDFB7828266DBAA119B87F03 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		2D7E03A22DA77573069A83236D68E05C /* RAMPaperSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMPaperSwitch-dummy.m"; sourceTree = "<group>"; };
+		2E325D4029B29DE08705C1CBC39AFA8B /* Pods-Where Is My Money IOsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		30239C2ED3F0B64FF513AF5D937488F3 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		31741020F89B4840FEDD44745610A6CE /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		34E481E63AD13CB0F052F39B987963A1 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		3B8CEC1B46423C108FB514354475BE4F /* KCFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KCFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		3C704A737949D5E2E43F82A2AA27EC47 /* Pods-Where Is My Money IOsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Where Is My Money IOsUITests.modulemap"; sourceTree = "<group>"; };
+		413620B7C97091583FDE5612263A0688 /* KCFABWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFABWindow.swift; path = Sources/KCFABWindow.swift; sourceTree = "<group>"; };
+		43B075F5CE19AA98EDF2DD95C91EE137 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		44C6E5D4DBB2AEF41280813A68A6AADB /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		4528C56138545FFAF1E3CDA785D8B988 /* Permissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permissions.swift; path = PermissionScope/Permissions.swift; sourceTree = "<group>"; };
+		4A6D6B8948E1E13375F35EA09D4F2874 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		4B71EDB06D352CDBFE6E13915C14669F /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		4BA722DF4C36652F67946B688C3CABAE /* Pods-Where Is My Money IOs-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOs-resources.sh"; sourceTree = "<group>"; };
+		4D8B8570A4FD9DD75E8811265E856C73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CFE18B9FB4FE37F87BB431C38FBB38 /* MainGear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainGear.swift; path = Source/MainGear.swift; sourceTree = "<group>"; };
+		52B200D7E435B40AADCB6D8227A53E1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55753C8E128136A5D23381E19A98FEF0 /* GearRefreshControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GearRefreshControl-prefix.pch"; sourceTree = "<group>"; };
+		5718E8AD7587F38014E69E748F95DA3B /* Pods-Where Is My Money IOs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Where Is My Money IOs.modulemap"; sourceTree = "<group>"; };
+		5AAFB31A9A3CF81DE5EFDE20C9E94FE4 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB122AE60AF439099AE9C6111BDB074 /* Pods-Where Is My Money IOsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5F43D53D31E648774F22B1CF51237725 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PermissionScope/Constants.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62FBF6DB7214EE43A38F7AB7034C5C68 /* RAMPaperSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RAMPaperSwitch.framework; path = RAMPaperSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		642E7A50BABE5C327A785EAF01EB3FA7 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		651C186B85F4DC3501AD2DDEDEFB35C2 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		67B6503F1F7B1CFFE31507DD129C9761 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		67BF0305F628E2278E6B4BE2F95686C0 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		67D1B927647A562022E7356D13FA9951 /* Pods-Where Is My Money IOsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68F1244320124E74DEAC409CBCD115CD /* Pods_Where_Is_My_Money_IOsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Where_Is_My_Money_IOsTests.framework; path = "Pods-Where Is My Money IOsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69253F97841F98D07918316E88847611 /* GearRefreshControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GearRefreshControl-dummy.m"; sourceTree = "<group>"; };
+		6AAAF9341F4E1E666FB7E98D0B54BFF6 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		6C9BA7F346CC533E9B18121521CE5528 /* Pods-Where Is My Money IOsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Where Is My Money IOsTests.modulemap"; sourceTree = "<group>"; };
+		6D72D251414F75BD5EF1043863ACF2B8 /* GearRefreshControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GearRefreshControl.modulemap; sourceTree = "<group>"; };
+		6D90B767ABFCF23F2E4C11D58C7B880C /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		6E999DE68C9024D5AFD549BCA4A3BC98 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		701ADB1A27855D398F656B5565B39EBE /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		702CF3B1572F2D6BFBABA40CC94CCC8A /* Pods-Where Is My Money IOs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Where Is My Money IOs-dummy.m"; sourceTree = "<group>"; };
+		712619B1F19BFA1CC12DD519DDC15808 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		743D854C2A3921BBAC153B8F898BAD3C /* KCFABViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFABViewController.swift; path = Sources/KCFABViewController.swift; sourceTree = "<group>"; };
+		76A9F4F12CE83F1ED6259F9872E9304B /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = PermissionScope/Extensions.swift; sourceTree = "<group>"; };
+		79E7A4A7CEC2B47BE94EDFE36A6691AB /* KCFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KCFloatingActionButton.framework; path = KCFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80D3D115C4CB2083CCAB89F6BECEA563 /* Pods-Where Is My Money IOsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Where Is My Money IOsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		80FF8ACFD2F8B996BF72552E7808D265 /* Pods-Where Is My Money IOsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOsUITests-resources.sh"; sourceTree = "<group>"; };
+		81CD51950A6D8F904E99C2593D6FB8D4 /* RAMPaperSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RAMPaperSwitch.modulemap; sourceTree = "<group>"; };
+		8397E2061051D0CA0A26D2AC68C140AE /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		8CD2EF005B3C35662D27177DB4F203D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE72AD67C1DFA2D12F57A68C98623D1 /* BigGear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BigGear.swift; path = Source/BigGear.swift; sourceTree = "<group>"; };
+		8E1962764F93E244470FDC1461427AC8 /* Pods-Where Is My Money IOsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Where Is My Money IOsTests-umbrella.h"; sourceTree = "<group>"; };
+		918B0565C3A140FF165D8413AFA8DD6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F530088BD609949C97AB2052974FB7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		933E37AE19081618C025E144EAB5A7A2 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		9364E8B45B2874FF5674AF45E77B6331 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93F36FF85DFD953FC0947E21D15FC229 /* KCFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFloatingActionButtonDelegate.swift; path = Sources/KCFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		981024A6D3DABEA67FCB3D3E5C621693 /* GearRefreshControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GearRefreshControl.xcconfig; sourceTree = "<group>"; };
+		98A68900E2E4FEA79CBEBD267A353ACD /* Pods-Where Is My Money IOsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Where Is My Money IOsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BECABFD99408DCC8476284730EA143C /* Pods-Where Is My Money IOs-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOs-frameworks.sh"; sourceTree = "<group>"; };
+		9CB89BC4E9C80694FE4F90D5F7642709 /* Pods-Where Is My Money IOsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Where Is My Money IOsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9CF0149F509B6F858928EE488CFA2264 /* Pods-Where Is My Money IOsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Where Is My Money IOsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A294F7385044AC1225F5DC943E96DFA8 /* Pods-Where Is My Money IOsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Where Is My Money IOsUITests-umbrella.h"; sourceTree = "<group>"; };
+		A4ED821395073F40BAF367F574903F62 /* PermissionScope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PermissionScope-dummy.m"; sourceTree = "<group>"; };
+		A7F640294D3F88587335C36B3053DA82 /* PermissionScope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionScope-umbrella.h"; sourceTree = "<group>"; };
+		A885BEE95406089FBB7E69F92BD298BE /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		AA1BF3598B59DADD2A813046D012DADA /* KCFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KCFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		AA7F7AF7E95D9FEEF083D5F9D8F83E0E /* GearRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GearRefreshControl.swift; path = Source/GearRefreshControl.swift; sourceTree = "<group>"; };
+		AB9BE5224F5854563015D81B14B7BB65 /* Pods-Where Is My Money IOsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Where Is My Money IOsUITests-dummy.m"; sourceTree = "<group>"; };
+		AD55FC228ABF48BAD4104DBECF86549E /* RAMPaperSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMPaperSwitch-prefix.pch"; sourceTree = "<group>"; };
+		AF69377C7F4980B64A189EA738375538 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		B429F367C8E790D858518A2A5B594FAF /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		B7A143FE450F7382054AD399F3F17237 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		B8473140273D1BBC8225FB3FD58F58CD /* Pods-Where Is My Money IOsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Where Is My Money IOsTests-dummy.m"; sourceTree = "<group>"; };
+		BC8AE900806E3F7D3EBDF590E1E33AF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDCD5E16D797F8A75AB8C4D76FCDA50 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		BCEDF5A33D9BA305790FE074AEBE118E /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70CCF4A97C8555EAAD33BD4D004CE5 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		BF0BA8E90C2C2FF5A73DB5D652EC6818 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		C15BAD6BBDB6544E039378153A2DEE74 /* PermissionScope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PermissionScope.modulemap; sourceTree = "<group>"; };
+		C1CD23EB4F43D2E6C5310953C264BE79 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		C40F51386ED3F4AC9B6BDB448171E00F /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMPaperSwitch.swift; path = PaperSwitch/RAMPaperSwitch.swift; sourceTree = "<group>"; };
+		C7D152CF9F075D35D67CB90A9D1A8143 /* KCFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KCFloatingActionButton.swift; path = Sources/KCFloatingActionButton.swift; sourceTree = "<group>"; };
+		CC5D6B5BF449322F65BAA16D29E043DF /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		CD4FFC75C57A4AE8E1506353DC037582 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4EA7B99C72E0DFC65D82EAD3475F28 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		CE79B38737B23AFCD124B6D4B1897ED9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D164E787DE8B551D3AAD58DD6BF181B0 /* RAMPaperSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMPaperSwitch.xcconfig; sourceTree = "<group>"; };
+		D49DDCCBA7BF10DF05C463A4FE5D7B92 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		D65DFF5F32697593B5A7F6BB31835ABA /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		DA1C6E9A0CDC73DBA1C9F11BD943077F /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		DF0C87A46F77211C3F2E1061F30E5505 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		E1B8EC5CC8F96ACB2A800EF467322479 /* Pods-Where Is My Money IOs-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Where Is My Money IOs-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2E72251C904A1A50598CFD256A60BA1 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		E33C65B86D54E72D6F127308D9319F06 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E49A6D4943686AEB96E7962A12F88A3D /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		E6D11F1B0B06633EF983CBF3C863FCBB /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		E8678EAD54A15AB826691A5A0FD2854C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FA9361AA4DBCB12F96EFC30BC36FFE /* PermissionScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PermissionScope.framework; path = PermissionScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE41E672C0E5F9CBFCF2A4FB0744211 /* Pods_Where_Is_My_Money_IOsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Where_Is_My_Money_IOsUITests.framework; path = "Pods-Where Is My Money IOsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB11520C052E54A763595911058D9E38 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		ECBB45E2663DBA3B0C3615855AA2C0BE /* PermissionScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionScope.swift; path = PermissionScope/PermissionScope.swift; sourceTree = "<group>"; };
+		EDE22E55518336C98C48668AA48D6138 /* PermissionScope-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PermissionScope-prefix.pch"; sourceTree = "<group>"; };
+		EE04AEA247A9A4CAB59E4B985244185F /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		EE4172C7AFB524D41DFFE2F18C16D7AF /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		EEE2B8CF3FC6635BE66006CF42B1AD8D /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		F2DB0AB08619BED5D09B65344189338E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		F3A8DEBB2DBA4DF4EB23C117A3E865BB /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		F7AD2E04FCE335927E33451B52C342D0 /* RAMPaperSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMPaperSwitch-umbrella.h"; sourceTree = "<group>"; };
+		FC21FBFC1D6CC2DF767B2755C88E5866 /* Pods-Where Is My Money IOsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Where Is My Money IOsTests-resources.sh"; sourceTree = "<group>"; };
+		FD672FD7727DB90839B47CFFD291BE22 /* KCFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KCFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		FE206521FA2B90F9A59409F13DC4FB81 /* Pods-Where Is My Money IOs-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Where Is My Money IOs-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093599179639BF2E7FB0FF8AC385C56C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B0FF4DB6AFB09432AED921C9B38ECC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C297C0AD447E41400CAD77B3DDBEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35EC1FD9592E685E4701ABED767E30F4 /* Foundation.framework in Frameworks */,
+				D67DB0D45C517BF8279A119C812D27B1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9510EB4EBB91ACAFA052331ECFBEFEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818DF3B5D6349A356EC61B5EA7561649 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B843EFFB71CA28DE6A12B550ABE5B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012867047EF7E1D5E2A5FF51AE39BCA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD40519A4481CF7DB923E770EC9B148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E5DAB636BB46BB02F289E08DE98156 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31265CF4D0AC7719870598D14107DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB26D2FB8723CF32BF178C884627D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69AA932D701780D2AED4A7E4513890A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F59631074881FDC26F0379E184B8A39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD27617973E065890C0906AB9617B735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581BD867F7315D72D54D2BC0E7B4EC47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0242B5D895E52D25403B112CCCA9E986 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4A6D6B8948E1E13375F35EA09D4F2874 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		156865FB167467E2FB61E64E4DB7A720 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C42D3466FE530AE0C75702DD80B90110 /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		25C995B68FEFC8F95D4BE5D3AE8E57F3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0242B5D895E52D25403B112CCCA9E986 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		3676F8D60078197FE42D64AD38CAA483 /* PermissionScope */ = {
+			isa = PBXGroup;
+			children = (
+				5F43D53D31E648774F22B1CF51237725 /* Constants.swift */,
+				76A9F4F12CE83F1ED6259F9872E9304B /* Extensions.swift */,
+				4528C56138545FFAF1E3CDA785D8B988 /* Permissions.swift */,
+				ECBB45E2663DBA3B0C3615855AA2C0BE /* PermissionScope.swift */,
+				0897AA4F94C427635DBC11E84653CDC7 /* Structs.swift */,
+				ED552570D49923908185E5036124D64E /* Support Files */,
+			);
+			name = PermissionScope;
+			path = PermissionScope;
+			sourceTree = "<group>";
+		};
+		397FC10DA9A7BA3C20A679FDDED15AF9 /* Pods-Where Is My Money IOsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B8570A4FD9DD75E8811265E856C73 /* Info.plist */,
+				3C704A737949D5E2E43F82A2AA27EC47 /* Pods-Where Is My Money IOsUITests.modulemap */,
+				98A68900E2E4FEA79CBEBD267A353ACD /* Pods-Where Is My Money IOsUITests-acknowledgements.markdown */,
+				80D3D115C4CB2083CCAB89F6BECEA563 /* Pods-Where Is My Money IOsUITests-acknowledgements.plist */,
+				AB9BE5224F5854563015D81B14B7BB65 /* Pods-Where Is My Money IOsUITests-dummy.m */,
+				5BB122AE60AF439099AE9C6111BDB074 /* Pods-Where Is My Money IOsUITests-frameworks.sh */,
+				80FF8ACFD2F8B996BF72552E7808D265 /* Pods-Where Is My Money IOsUITests-resources.sh */,
+				A294F7385044AC1225F5DC943E96DFA8 /* Pods-Where Is My Money IOsUITests-umbrella.h */,
+				9CF0149F509B6F858928EE488CFA2264 /* Pods-Where Is My Money IOsUITests.debug.xcconfig */,
+				2E325D4029B29DE08705C1CBC39AFA8B /* Pods-Where Is My Money IOsUITests.release.xcconfig */,
+			);
+			name = "Pods-Where Is My Money IOsUITests";
+			path = "Target Support Files/Pods-Where Is My Money IOsUITests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44CBF3310E5EF3AC626B676D5D0FF6D5 /* KCFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				0A86567DF297E1F391A49D8F185183FF /* KCFABManager.swift */,
+				743D854C2A3921BBAC153B8F898BAD3C /* KCFABViewController.swift */,
+				413620B7C97091583FDE5612263A0688 /* KCFABWindow.swift */,
+				C7D152CF9F075D35D67CB90A9D1A8143 /* KCFloatingActionButton.swift */,
+				93F36FF85DFD953FC0947E21D15FC229 /* KCFloatingActionButtonDelegate.swift */,
+				1BA951FA0ABAF7A5612FE72D7D61FC51 /* KCFloatingActionButtonItem.swift */,
+				8A6328AE838996DF7949DE87A33641DC /* Support Files */,
+			);
+			name = KCFloatingActionButton;
+			path = KCFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		456433E380D9B9A40CCC3CD0307D5F24 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				34E481E63AD13CB0F052F39B987963A1 /* FIRInstanceID.h */,
+				E75C310B498BEC5A0C59685DBFE69281 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		55C796223220971903EB73245FAF98AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7A143FE450F7382054AD399F3F17237 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A98E59E3576A394C7C187C5869BF948 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FFC75C57A4AE8E1506353DC037582 /* Info.plist */,
+				2619EFB2F86CBD1DE7848BA184CF6892 /* SnapKit.modulemap */,
+				A885BEE95406089FBB7E69F92BD298BE /* SnapKit.xcconfig */,
+				0D2FF1D26363DD05CE9577D50683C779 /* SnapKit-dummy.m */,
+				C1CD23EB4F43D2E6C5310953C264BE79 /* SnapKit-prefix.pch */,
+				701ADB1A27855D398F656B5565B39EBE /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		5DCCE1C548F96860E0CF95A26944031E /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5E718D256D2319322E38BD0BC87CF9B /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		63955BD6CA4154C2EF41B068B249B654 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8156A5303426A5565DA970C9C8C61663 /* Pods-Where Is My Money IOs */,
+				889D7C7217147D4B66860A786488B75B /* Pods-Where Is My Money IOsTests */,
+				397FC10DA9A7BA3C20A679FDDED15AF9 /* Pods-Where Is My Money IOsUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		67FAA47647D8DD6659EA8551519AE542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F530088BD609949C97AB2052974FB7 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69F7513C5E79BC7061984DF27D08210B /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				F3A8DEBB2DBA4DF4EB23C117A3E865BB /* GTMNSData+zlib.h */,
+				6AAAF9341F4E1E666FB7E98D0B54BFF6 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		7022DB7FD27DB17BC95EFC9092772D4A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE79B38737B23AFCD124B6D4B1897ED9 /* Info.plist */,
+				81CD51950A6D8F904E99C2593D6FB8D4 /* RAMPaperSwitch.modulemap */,
+				D164E787DE8B551D3AAD58DD6BF181B0 /* RAMPaperSwitch.xcconfig */,
+				2D7E03A22DA77573069A83236D68E05C /* RAMPaperSwitch-dummy.m */,
+				AD55FC228ABF48BAD4104DBECF86549E /* RAMPaperSwitch-prefix.pch */,
+				F7AD2E04FCE335927E33451B52C342D0 /* RAMPaperSwitch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMPaperSwitch";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				AECB1F261250E4C88C09B5D71F51E58B /* Pods */,
+				FD7828714F2B9493C88E295817168597 /* Products */,
+				63955BD6CA4154C2EF41B068B249B654 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8156A5303426A5565DA970C9C8C61663 /* Pods-Where Is My Money IOs */ = {
+			isa = PBXGroup;
+			children = (
+				BC8AE900806E3F7D3EBDF590E1E33AF7 /* Info.plist */,
+				5718E8AD7587F38014E69E748F95DA3B /* Pods-Where Is My Money IOs.modulemap */,
+				FE206521FA2B90F9A59409F13DC4FB81 /* Pods-Where Is My Money IOs-acknowledgements.markdown */,
+				E1B8EC5CC8F96ACB2A800EF467322479 /* Pods-Where Is My Money IOs-acknowledgements.plist */,
+				702CF3B1572F2D6BFBABA40CC94CCC8A /* Pods-Where Is My Money IOs-dummy.m */,
+				9BECABFD99408DCC8476284730EA143C /* Pods-Where Is My Money IOs-frameworks.sh */,
+				4BA722DF4C36652F67946B688C3CABAE /* Pods-Where Is My Money IOs-resources.sh */,
+				096D02751FD533377012AA65EB638128 /* Pods-Where Is My Money IOs-umbrella.h */,
+				19B4103C39BBBE9FD45A548B32902D37 /* Pods-Where Is My Money IOs.debug.xcconfig */,
+				1E52760866C2DAAF00D145B675D62F10 /* Pods-Where Is My Money IOs.release.xcconfig */,
+			);
+			name = "Pods-Where Is My Money IOs";
+			path = "Target Support Files/Pods-Where Is My Money IOs";
+			sourceTree = "<group>";
+		};
+		889D7C7217147D4B66860A786488B75B /* Pods-Where Is My Money IOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				118D5582CA73231E19DEFA02B56E1C6C /* Info.plist */,
+				6C9BA7F346CC533E9B18121521CE5528 /* Pods-Where Is My Money IOsTests.modulemap */,
+				9CB89BC4E9C80694FE4F90D5F7642709 /* Pods-Where Is My Money IOsTests-acknowledgements.markdown */,
+				006C7EBA81CBCFC6A62FCB898E7BD985 /* Pods-Where Is My Money IOsTests-acknowledgements.plist */,
+				B8473140273D1BBC8225FB3FD58F58CD /* Pods-Where Is My Money IOsTests-dummy.m */,
+				024D69A6294CC70E6B61743FB3045BB0 /* Pods-Where Is My Money IOsTests-frameworks.sh */,
+				FC21FBFC1D6CC2DF767B2755C88E5866 /* Pods-Where Is My Money IOsTests-resources.sh */,
+				8E1962764F93E244470FDC1461427AC8 /* Pods-Where Is My Money IOsTests-umbrella.h */,
+				67D1B927647A562022E7356D13FA9951 /* Pods-Where Is My Money IOsTests.debug.xcconfig */,
+				232371E479C7E6199CD9F21007850C18 /* Pods-Where Is My Money IOsTests.release.xcconfig */,
+			);
+			name = "Pods-Where Is My Money IOsTests";
+			path = "Target Support Files/Pods-Where Is My Money IOsTests";
+			sourceTree = "<group>";
+		};
+		8A6328AE838996DF7949DE87A33641DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2EF005B3C35662D27177DB4F203D7 /* Info.plist */,
+				07983A767585CE451D9217CAA628595C /* KCFloatingActionButton.modulemap */,
+				FD672FD7727DB90839B47CFFD291BE22 /* KCFloatingActionButton.xcconfig */,
+				3B8CEC1B46423C108FB514354475BE4F /* KCFloatingActionButton-dummy.m */,
+				AA1BF3598B59DADD2A813046D012DADA /* KCFloatingActionButton-prefix.pch */,
+				0791A11D56B9CF222DEF6A53B19D369C /* KCFloatingActionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KCFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		9AB2FBEFBF97DE124AD2326CA29047FB /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				EE4172C7AFB524D41DFFE2F18C16D7AF /* Constraint.swift */,
+				DA1C6E9A0CDC73DBA1C9F11BD943077F /* ConstraintAttributes.swift */,
+				67B6503F1F7B1CFFE31507DD129C9761 /* ConstraintConfig.swift */,
+				E33C65B86D54E72D6F127308D9319F06 /* ConstraintConstantTarget.swift */,
+				0EACA0002C827BFADF1C02FCD1EA3444 /* ConstraintDescription.swift */,
+				CC5D6B5BF449322F65BAA16D29E043DF /* ConstraintDSL.swift */,
+				31741020F89B4840FEDD44745610A6CE /* ConstraintInsets.swift */,
+				6D90B767ABFCF23F2E4C11D58C7B880C /* ConstraintInsetTarget.swift */,
+				651C186B85F4DC3501AD2DDEDEFB35C2 /* ConstraintItem.swift */,
+				CE4EA7B99C72E0DFC65D82EAD3475F28 /* ConstraintLayoutGuide.swift */,
+				11EFF70380D790D8065584C14EEEC7AB /* ConstraintLayoutGuide+Extensions.swift */,
+				20C795891001E193D17477F66177D66A /* ConstraintLayoutGuideDSL.swift */,
+				E2E72251C904A1A50598CFD256A60BA1 /* ConstraintLayoutSupport.swift */,
+				EB11520C052E54A763595911058D9E38 /* ConstraintLayoutSupportDSL.swift */,
+				43B075F5CE19AA98EDF2DD95C91EE137 /* ConstraintMaker.swift */,
+				2AC37407DDFB7828266DBAA119B87F03 /* ConstraintMakerEditable.swift */,
+				67BF0305F628E2278E6B4BE2F95686C0 /* ConstraintMakerExtendable.swift */,
+				BE70CCF4A97C8555EAAD33BD4D004CE5 /* ConstraintMakerFinalizable.swift */,
+				44C6E5D4DBB2AEF41280813A68A6AADB /* ConstraintMakerPriortizable.swift */,
+				B429F367C8E790D858518A2A5B594FAF /* ConstraintMakerRelatable.swift */,
+				30239C2ED3F0B64FF513AF5D937488F3 /* ConstraintMultiplierTarget.swift */,
+				9364E8B45B2874FF5674AF45E77B6331 /* ConstraintOffsetTarget.swift */,
+				BCDCD5E16D797F8A75AB8C4D76FCDA50 /* ConstraintPriorityTarget.swift */,
+				BF0BA8E90C2C2FF5A73DB5D652EC6818 /* ConstraintRelatableTarget.swift */,
+				6E999DE68C9024D5AFD549BCA4A3BC98 /* ConstraintRelation.swift */,
+				07F44F43F125B7EB6E65EE1200FE3FE1 /* ConstraintView.swift */,
+				D49DDCCBA7BF10DF05C463A4FE5D7B92 /* ConstraintView+Extensions.swift */,
+				0A9ACCA6F53828B3E3AC1A2EB19360F0 /* ConstraintViewDSL.swift */,
+				F2DB0AB08619BED5D09B65344189338E /* Debugging.swift */,
+				DF0C87A46F77211C3F2E1061F30E5505 /* LayoutConstraint.swift */,
+				E49A6D4943686AEB96E7962A12F88A3D /* LayoutConstraintItem.swift */,
+				D65DFF5F32697593B5A7F6BB31835ABA /* UILayoutSupport+Extensions.swift */,
+				5A98E59E3576A394C7C187C5869BF948 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		9B836B205EB0B1129767D30D055A41E4 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				B815380CDDE59D6D60D552F75A82573A /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		9E7A45326DC7C09E0A28D50DBCD48A68 /* GearRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				8DE72AD67C1DFA2D12F57A68C98623D1 /* BigGear.swift */,
+				AA7F7AF7E95D9FEEF083D5F9D8F83E0E /* GearRefreshControl.swift */,
+				50CFE18B9FB4FE37F87BB431C38FBB38 /* MainGear.swift */,
+				EE2D6568A7242F5FA51A7C58156E6A96 /* Support Files */,
+			);
+			name = GearRefreshControl;
+			path = GearRefreshControl;
+			sourceTree = "<group>";
+		};
+		AECB1F261250E4C88C09B5D71F51E58B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C995B68FEFC8F95D4BE5D3AE8E57F3 /* Firebase */,
+				CCE49E56B75632CC2C3030BF7096EE8A /* FirebaseAnalytics */,
+				9B836B205EB0B1129767D30D055A41E4 /* FirebaseCore */,
+				F8DB84105F513568344E397FC8D11B26 /* FirebaseDatabase */,
+				456433E380D9B9A40CCC3CD0307D5F24 /* FirebaseInstanceID */,
+				9E7A45326DC7C09E0A28D50DBCD48A68 /* GearRefreshControl */,
+				156865FB167467E2FB61E64E4DB7A720 /* GoogleInterchangeUtilities */,
+				5DCCE1C548F96860E0CF95A26944031E /* GoogleSymbolUtilities */,
+				F5614A51145C797E2547A0CD0F6E5770 /* GoogleToolboxForMac */,
+				44CBF3310E5EF3AC626B676D5D0FF6D5 /* KCFloatingActionButton */,
+				3676F8D60078197FE42D64AD38CAA483 /* PermissionScope */,
+				D91CF7B2E83968032E271C1205C1DAC2 /* RAMPaperSwitch */,
+				9AB2FBEFBF97DE124AD2326CA29047FB /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5E718D256D2319322E38BD0BC87CF9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF69377C7F4980B64A189EA738375538 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B815380CDDE59D6D60D552F75A82573A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8397E2061051D0CA0A26D2AC68C140AE /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42D3466FE530AE0C75702DD80B90110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				712619B1F19BFA1CC12DD519DDC15808 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCE49E56B75632CC2C3030BF7096EE8A /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				67FAA47647D8DD6659EA8551519AE542 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		D91CF7B2E83968032E271C1205C1DAC2 /* RAMPaperSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				C40F51386ED3F4AC9B6BDB448171E00F /* RAMPaperSwitch.swift */,
+				7022DB7FD27DB17BC95EFC9092772D4A /* Support Files */,
+			);
+			name = RAMPaperSwitch;
+			path = RAMPaperSwitch;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E75C310B498BEC5A0C59685DBFE69281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B71EDB06D352CDBFE6E13915C14669F /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED552570D49923908185E5036124D64E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				918B0565C3A140FF165D8413AFA8DD6B /* Info.plist */,
+				C15BAD6BBDB6544E039378153A2DEE74 /* PermissionScope.modulemap */,
+				127703A75582BC08E5A42CBBE7053800 /* PermissionScope.xcconfig */,
+				A4ED821395073F40BAF367F574903F62 /* PermissionScope-dummy.m */,
+				EDE22E55518336C98C48668AA48D6138 /* PermissionScope-prefix.pch */,
+				A7F640294D3F88587335C36B3053DA82 /* PermissionScope-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PermissionScope";
+			sourceTree = "<group>";
+		};
+		EE2D6568A7242F5FA51A7C58156E6A96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D72D251414F75BD5EF1043863ACF2B8 /* GearRefreshControl.modulemap */,
+				981024A6D3DABEA67FCB3D3E5C621693 /* GearRefreshControl.xcconfig */,
+				69253F97841F98D07918316E88847611 /* GearRefreshControl-dummy.m */,
+				55753C8E128136A5D23381E19A98FEF0 /* GearRefreshControl-prefix.pch */,
+				2896DFE5668F071A2BD479BE5D35195A /* GearRefreshControl-umbrella.h */,
+				52B200D7E435B40AADCB6D8227A53E1E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GearRefreshControl";
+			sourceTree = "<group>";
+		};
+		EF62DF3E370AB74AEB22CF77FDA97240 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				642E7A50BABE5C327A785EAF01EB3FA7 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		F5614A51145C797E2547A0CD0F6E5770 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				EF62DF3E370AB74AEB22CF77FDA97240 /* Defines */,
+				69F7513C5E79BC7061984DF27D08210B /* NSData+zlib */,
+				F64CBDB2B7D4659E0B44B81F8180D8B2 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		F64CBDB2B7D4659E0B44B81F8180D8B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2B8CF3FC6635BE66006CF42B1AD8D /* GoogleToolboxForMac.modulemap */,
+				933E37AE19081618C025E144EAB5A7A2 /* GoogleToolboxForMac.xcconfig */,
+				EE04AEA247A9A4CAB59E4B985244185F /* GoogleToolboxForMac-dummy.m */,
+				E6D11F1B0B06633EF983CBF3C863FCBB /* GoogleToolboxForMac-prefix.pch */,
+				2A38F3742A9CE7E86EA7878C7F6B7035 /* GoogleToolboxForMac-umbrella.h */,
+				E8678EAD54A15AB826691A5A0FD2854C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		F8DB84105F513568344E397FC8D11B26 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				55C796223220971903EB73245FAF98AA /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		FD7828714F2B9493C88E295817168597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C4219B71C7DBF5D8E67EFEE83C36B0 /* GearRefreshControl.framework */,
+				BCEDF5A33D9BA305790FE074AEBE118E /* GoogleToolboxForMac.framework */,
+				79E7A4A7CEC2B47BE94EDFE36A6691AB /* KCFloatingActionButton.framework */,
+				E8FA9361AA4DBCB12F96EFC30BC36FFE /* PermissionScope.framework */,
+				148F097516DC754CECCBD86CB6126354 /* Pods_Where_Is_My_Money_IOs.framework */,
+				68F1244320124E74DEAC409CBCD115CD /* Pods_Where_Is_My_Money_IOsTests.framework */,
+				EAE41E672C0E5F9CBFCF2A4FB0744211 /* Pods_Where_Is_My_Money_IOsUITests.framework */,
+				62FBF6DB7214EE43A38F7AB7034C5C68 /* RAMPaperSwitch.framework */,
+				5AAFB31A9A3CF81DE5EFDE20C9E94FE4 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B1B9DD162346FF1A2DECD6C66C509A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B437547B545DA318C279F92D7B7C4AEC /* RAMPaperSwitch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFA5D81C7DEBF5B9836879FBBAC4A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE35FBD065961FEB5EE511825D6FB77 /* GearRefreshControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76ED26D372700D120C15E4A66F4E278 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B1A40419F5B2AE246F7E7202E3F307 /* Pods-Where Is My Money IOs-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB046FC9E9FF6A5C18D6767981FEA376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A791AB30368E7CE838E6C85A8ED97E6 /* Pods-Where Is My Money IOsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED8062FF465FA3F4E97189464612F47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E8CA67DEC919A6152AE88CFBADC41E /* KCFloatingActionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55347470F02DF39AEDD54E6FFE3E9BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F788DDA2F4F304C9F367DD40C2B919F /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69ACAB8402527A87C87B73C603C4BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77AF7F8FD85AABB76CF219752C37088 /* Pods-Where Is My Money IOsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC1CD8142198990B315C8A5EBC31645 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A24C2737B5D23AABE71D1F22D3277F /* PermissionScope-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = BCEDF5A33D9BA305790FE074AEBE118E /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0751C1FED7E5020F6528A8B64693F489 /* GearRefreshControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67692CF6C68749EC41F1ABA38D55A3C0 /* Build configuration list for PBXNativeTarget "GearRefreshControl" */;
+			buildPhases = (
+				1D982D259CC48E1D70375618006951D2 /* Sources */,
+				9510EB4EBB91ACAFA052331ECFBEFEE3 /* Frameworks */,
+				5FBFA5D81C7DEBF5B9836879FBBAC4A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GearRefreshControl;
+			productName = GearRefreshControl;
+			productReference = 03C4219B71C7DBF5D8E67EFEE83C36B0 /* GearRefreshControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32884D05B603CDC0727A0B8D565ED60D /* Pods-Where Is My Money IOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C643D3ADE44B11F6A50874554F1A604 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOs" */;
+			buildPhases = (
+				882C303221153DEBA0ABFD7F743F1D9E /* Sources */,
+				AFD40519A4481CF7DB923E770EC9B148 /* Frameworks */,
+				A76ED26D372700D120C15E4A66F4E278 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE1F0BA58E6EB6534F853A04906EB68 /* PBXTargetDependency */,
+				15EDC3DEFE78078AF4D93940484FEA8A /* PBXTargetDependency */,
+				C8E51E762DE0ACEACDEAFE562D789848 /* PBXTargetDependency */,
+				9ED3BC978939B378179D914F47A5AF37 /* PBXTargetDependency */,
+				0E39AB546997E7C2A0B6F39B2388492B /* PBXTargetDependency */,
+				59D2DEB94B75476CB1363761A01066BC /* PBXTargetDependency */,
+			);
+			name = "Pods-Where Is My Money IOs";
+			productName = "Pods-Where Is My Money IOs";
+			productReference = 148F097516DC754CECCBD86CB6126354 /* Pods_Where_Is_My_Money_IOs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C25AFB78CEF0A6CA4B4B687C6C25F53 /* Pods-Where Is My Money IOsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCD018EF97BCDA3F7491DC56BEDC2F1 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOsUITests" */;
+			buildPhases = (
+				E9166A0985DC865086EC972A38EC2E85 /* Sources */,
+				9B843EFFB71CA28DE6A12B550ABE5B3F /* Frameworks */,
+				BB046FC9E9FF6A5C18D6767981FEA376 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Where Is My Money IOsUITests";
+			productName = "Pods-Where Is My Money IOsUITests";
+			productReference = EAE41E672C0E5F9CBFCF2A4FB0744211 /* Pods_Where_Is_My_Money_IOsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6E9CEC9E5ACFE69D21456CCB70BEEA0 /* KCFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64332872CA000F9586A1EE3AB7931A2F /* Build configuration list for PBXNativeTarget "KCFloatingActionButton" */;
+			buildPhases = (
+				6447D2454052DF3D6542A514F0A524AE /* Sources */,
+				90C297C0AD447E41400CAD77B3DDBEA9 /* Frameworks */,
+				BED8062FF465FA3F4E97189464612F47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KCFloatingActionButton;
+			productName = KCFloatingActionButton;
+			productReference = 79E7A4A7CEC2B47BE94EDFE36A6691AB /* KCFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A925CDEC53B420CA7EE1AA1CAEEC0DF4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4895A8EDEC97D41135897F0940BDF789 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				C6CB590AC0993C5E3B6B0541414FADDF /* Sources */,
+				093599179639BF2E7FB0FF8AC385C56C /* Frameworks */,
+				C55347470F02DF39AEDD54E6FFE3E9BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 5AAFB31A9A3CF81DE5EFDE20C9E94FE4 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D973DBB3FF803A3BAC3F870E70F87628 /* PermissionScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777743DE59864EC1F4A610E0D1ACEC75 /* Build configuration list for PBXNativeTarget "PermissionScope" */;
+			buildPhases = (
+				BADE0385264EB913C53E931F7A482FBB /* Sources */,
+				C69AA932D701780D2AED4A7E4513890A /* Frameworks */,
+				EAC1CD8142198990B315C8A5EBC31645 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PermissionScope;
+			productName = PermissionScope;
+			productReference = E8FA9361AA4DBCB12F96EFC30BC36FFE /* PermissionScope.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E90DF3C3D42FB45B095A35BFC7720366 /* Pods-Where Is My Money IOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AEF5299920DB42D9941BCB65363E714 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOsTests" */;
+			buildPhases = (
+				92BAB1B87154E87D467BA07C75687161 /* Sources */,
+				FD27617973E065890C0906AB9617B735 /* Frameworks */,
+				DD69ACAB8402527A87C87B73C603C4BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Where Is My Money IOsTests";
+			productName = "Pods-Where Is My Money IOsTests";
+			productReference = 68F1244320124E74DEAC409CBCD115CD /* Pods_Where_Is_My_Money_IOsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8C347B6F71B2F629721838067FE6C58 /* RAMPaperSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431C12F3AEB27A35727D36FCDDA83E9D /* Build configuration list for PBXNativeTarget "RAMPaperSwitch" */;
+			buildPhases = (
+				96695AA74F6B27277C8A95F4BA58E63C /* Sources */,
+				C31265CF4D0AC7719870598D14107DC6 /* Frameworks */,
+				2B1B9DD162346FF1A2DECD6C66C509A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMPaperSwitch;
+			productName = RAMPaperSwitch;
+			productReference = 62FBF6DB7214EE43A38F7AB7034C5C68 /* RAMPaperSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FD7828714F2B9493C88E295817168597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0751C1FED7E5020F6528A8B64693F489 /* GearRefreshControl */,
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				A6E9CEC9E5ACFE69D21456CCB70BEEA0 /* KCFloatingActionButton */,
+				D973DBB3FF803A3BAC3F870E70F87628 /* PermissionScope */,
+				32884D05B603CDC0727A0B8D565ED60D /* Pods-Where Is My Money IOs */,
+				E90DF3C3D42FB45B095A35BFC7720366 /* Pods-Where Is My Money IOsTests */,
+				5C25AFB78CEF0A6CA4B4B687C6C25F53 /* Pods-Where Is My Money IOsUITests */,
+				F8C347B6F71B2F629721838067FE6C58 /* RAMPaperSwitch */,
+				A925CDEC53B420CA7EE1AA1CAEEC0DF4 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D982D259CC48E1D70375618006951D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B19A1F9192ACDD21BE0821FF60FB594 /* BigGear.swift in Sources */,
+				4E298ED23E4346A82D1846021A4F7C68 /* GearRefreshControl-dummy.m in Sources */,
+				0F3F7940127E78F0CAB07EB41C75B2CF /* GearRefreshControl.swift in Sources */,
+				D36560F3B1E28CA5755993984B3A51FC /* MainGear.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6447D2454052DF3D6542A514F0A524AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80F184AFC57C3EB80FEBBF9A641D14E /* KCFABManager.swift in Sources */,
+				3C049DD110DE86B477B31E96D86F57DB /* KCFABViewController.swift in Sources */,
+				1C07A3BD3D48293C03CF496B47A3D966 /* KCFABWindow.swift in Sources */,
+				7AEC4D4357DACF46689436014E0F1CC2 /* KCFloatingActionButton-dummy.m in Sources */,
+				BEFB286F797B17C412B2E0914B70F331 /* KCFloatingActionButton.swift in Sources */,
+				F64DE616FF0621E0DBE963A660B4C86C /* KCFloatingActionButtonDelegate.swift in Sources */,
+				CD6F705538BCD119DA4AE3F2B9255F31 /* KCFloatingActionButtonItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882C303221153DEBA0ABFD7F743F1D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3CF211042046FD835628208F7ACA67 /* Pods-Where Is My Money IOs-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92BAB1B87154E87D467BA07C75687161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62964926FFCBE4046DD63AA003BA3AB /* Pods-Where Is My Money IOsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96695AA74F6B27277C8A95F4BA58E63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7214CEE6536703CF3A4D3E68C2B58F8 /* RAMPaperSwitch-dummy.m in Sources */,
+				2EED328974E4F8B74E870926FAFA6658 /* RAMPaperSwitch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BADE0385264EB913C53E931F7A482FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45DF200A360CF9307647D9788A03DE5 /* Constants.swift in Sources */,
+				6C7329B87F8DC63AFD3B2F890ED42BBF /* Extensions.swift in Sources */,
+				BCEE9983DF091349B5EE3F241A4D99EF /* Permissions.swift in Sources */,
+				2B239C361D365E807CD2D80E413E7977 /* PermissionScope-dummy.m in Sources */,
+				EAF836588911B032B0BF601A416961AD /* PermissionScope.swift in Sources */,
+				E75F0315FD87D64F7F8A0A0140007960 /* Structs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CB590AC0993C5E3B6B0541414FADDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B383B9D89E29BEF6379C7DDCE7D646 /* Constraint.swift in Sources */,
+				1229DB5A6E42A5518484A959698E5868 /* ConstraintAttributes.swift in Sources */,
+				8501A27C682DB79FFDBB9185C8AAD4DD /* ConstraintConfig.swift in Sources */,
+				14AAC3F937E2885ED92EE6795CD1370D /* ConstraintConstantTarget.swift in Sources */,
+				32A1B4E6FE82AA9B60478890BA5265B9 /* ConstraintDescription.swift in Sources */,
+				37D059B636FED6928615FD45BAB54EC2 /* ConstraintDSL.swift in Sources */,
+				60EA48BFFF77234CA2729047989B2361 /* ConstraintInsets.swift in Sources */,
+				08FEA95758067CF9961FF45EE081557C /* ConstraintInsetTarget.swift in Sources */,
+				4816D8CCCD8C33776257F4692392F00F /* ConstraintItem.swift in Sources */,
+				F324A9D36FF23AD6B696775E75C2D75D /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				64BEC014A17388075F95C5D0A00DF662 /* ConstraintLayoutGuide.swift in Sources */,
+				E25E47552F702A7E3E21FD9E8CB5F5AA /* ConstraintLayoutGuideDSL.swift in Sources */,
+				CD1B6D4775D200E43E6DD3058BCF758E /* ConstraintLayoutSupport.swift in Sources */,
+				82A08A1DCB16B672F44FED30312DD24C /* ConstraintLayoutSupportDSL.swift in Sources */,
+				7277CDC592A7850556DC9AC1DA58F39D /* ConstraintMaker.swift in Sources */,
+				CA5B741B804A4000362D5314712DAD8E /* ConstraintMakerEditable.swift in Sources */,
+				4FD14E5292F5877A7E595645A10F7692 /* ConstraintMakerExtendable.swift in Sources */,
+				63B8B22A469C46F34C1487DB6D285340 /* ConstraintMakerFinalizable.swift in Sources */,
+				E772E0C7C00E05ABF013990D41289D65 /* ConstraintMakerPriortizable.swift in Sources */,
+				B20E2D0F162E88B824F72EC7ADD275EF /* ConstraintMakerRelatable.swift in Sources */,
+				A1262EE3752352BA98C25DE05307B675 /* ConstraintMultiplierTarget.swift in Sources */,
+				3F8F8A2113FAEF6593F949D33983E345 /* ConstraintOffsetTarget.swift in Sources */,
+				118BD1CD33F8D70DA9591C3B233B7F04 /* ConstraintPriorityTarget.swift in Sources */,
+				019E2956A118B92CEA3A19AC8CE30147 /* ConstraintRelatableTarget.swift in Sources */,
+				E0B6B85DAC505C54BE3663E790813241 /* ConstraintRelation.swift in Sources */,
+				082295C80B9E2E0FA8FE5D12912C1CF1 /* ConstraintView+Extensions.swift in Sources */,
+				97A90361FAF9C6F84A117E684D2FDC03 /* ConstraintView.swift in Sources */,
+				5FE835E94A4794A306F321665ADC0259 /* ConstraintViewDSL.swift in Sources */,
+				7A37BB5C6635E0E90E68F1E7C10B763D /* Debugging.swift in Sources */,
+				00775D1F6E10FF89AC1995902220FB6C /* LayoutConstraint.swift in Sources */,
+				012838AC040201C91A20A10869293560 /* LayoutConstraintItem.swift in Sources */,
+				501EF00F60418835238CC0A9A4B990FA /* SnapKit-dummy.m in Sources */,
+				6BB9C5C597B52FF4B3B1C55D25401608 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9166A0985DC865086EC972A38EC2E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFCDD1CF2A905A41B0256B25DC3797A /* Pods-Where Is My Money IOsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E39AB546997E7C2A0B6F39B2388492B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMPaperSwitch;
+			target = F8C347B6F71B2F629721838067FE6C58 /* RAMPaperSwitch */;
+			targetProxy = 9C93A7D8CA2FCF7D1FF47A3523C95DF0 /* PBXContainerItemProxy */;
+		};
+		15EDC3DEFE78078AF4D93940484FEA8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 7C9BDFDF1712FE8D0B494B65717F91B5 /* PBXContainerItemProxy */;
+		};
+		59D2DEB94B75476CB1363761A01066BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = A925CDEC53B420CA7EE1AA1CAEEC0DF4 /* SnapKit */;
+			targetProxy = 36E3F7F6A06C63BE2FF9DFDDAFCBE7BC /* PBXContainerItemProxy */;
+		};
+		9ED3BC978939B378179D914F47A5AF37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PermissionScope;
+			target = D973DBB3FF803A3BAC3F870E70F87628 /* PermissionScope */;
+			targetProxy = BFC9DAB57D44CCF9763F1735B9F56FE4 /* PBXContainerItemProxy */;
+		};
+		C8E51E762DE0ACEACDEAFE562D789848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KCFloatingActionButton;
+			target = A6E9CEC9E5ACFE69D21456CCB70BEEA0 /* KCFloatingActionButton */;
+			targetProxy = 0D6E6C60DC42E2D3227981757C08CFC0 /* PBXContainerItemProxy */;
+		};
+		EDE1F0BA58E6EB6534F853A04906EB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GearRefreshControl;
+			target = 0751C1FED7E5020F6528A8B64693F489 /* GearRefreshControl */;
+			targetProxy = 6F5B38937B587BBCD4179E8D0F0B99B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A788870586BD07C7FA2E890182F3E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127703A75582BC08E5A42CBBE7053800 /* PermissionScope.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PermissionScope/PermissionScope-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PermissionScope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PermissionScope/PermissionScope.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PermissionScope;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D58A08F3164D631123E930EFCD390FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981024A6D3DABEA67FCB3D3E5C621693 /* GearRefreshControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GearRefreshControl/GearRefreshControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GearRefreshControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GearRefreshControl/GearRefreshControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GearRefreshControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15F29F9BCCABC061F1F9066CAE1350E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981024A6D3DABEA67FCB3D3E5C621693 /* GearRefreshControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GearRefreshControl/GearRefreshControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GearRefreshControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GearRefreshControl/GearRefreshControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GearRefreshControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		299A9F812B14C34D32B44CF62FA67ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 232371E479C7E6199CD9F21007850C18 /* Pods-Where Is My Money IOsTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOsTests/Pods-Where Is My Money IOsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A4255378CFD9B74D53141AE1A82490E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF0149F509B6F858928EE488CFA2264 /* Pods-Where Is My Money IOsUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOsUITests/Pods-Where Is My Money IOsUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOsUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D41F848DFD5039817C823AF0A1D2B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD672FD7727DB90839B47CFFD291BE22 /* KCFloatingActionButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KCFloatingActionButton/KCFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KCFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KCFloatingActionButton/KCFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KCFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43811EEA64F9B6AFB9706E590B807CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E52760866C2DAAF00D145B675D62F10 /* Pods-Where Is My Money IOs.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOs/Pods-Where Is My Money IOs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47A2558475713FFD9B61604AF8D2F186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E325D4029B29DE08705C1CBC39AFA8B /* Pods-Where Is My Money IOsUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOsUITests/Pods-Where Is My Money IOsUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOsUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49E6BDADCA499D685B0141773C1DA230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D164E787DE8B551D3AAD58DD6BF181B0 /* RAMPaperSwitch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMPaperSwitch/RAMPaperSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMPaperSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMPaperSwitch/RAMPaperSwitch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RAMPaperSwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A26E7B3D7E9F7ECF928C8C3160C9829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD672FD7727DB90839B47CFFD291BE22 /* KCFloatingActionButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KCFloatingActionButton/KCFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KCFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KCFloatingActionButton/KCFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KCFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63B3C65BB79C44AD8BC0A953DF9083BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D1B927647A562022E7356D13FA9951 /* Pods-Where Is My Money IOsTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOsTests/Pods-Where Is My Money IOsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77B21CABDF285E977C2C2EA7002FDAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127703A75582BC08E5A42CBBE7053800 /* PermissionScope.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PermissionScope/PermissionScope-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PermissionScope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PermissionScope/PermissionScope.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PermissionScope;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A10CFDA47B390F2F7D60948723988ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D164E787DE8B551D3AAD58DD6BF181B0 /* RAMPaperSwitch.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMPaperSwitch/RAMPaperSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMPaperSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMPaperSwitch/RAMPaperSwitch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RAMPaperSwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B24B30D6A602DE6E0D36F5581F714A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A885BEE95406089FBB7E69F92BD298BE /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933E37AE19081618C025E144EAB5A7A2 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC28B5E3ED78DAE0386370C7F79C29EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B4103C39BBBE9FD45A548B32902D37 /* Pods-Where Is My Money IOs.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Where Is My Money IOs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Where Is My Money IOs/Pods-Where Is My Money IOs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Where_Is_My_Money_IOs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EFD028D25D7175B7C8BB5703291A5FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A885BEE95406089FBB7E69F92BD298BE /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933E37AE19081618C025E144EAB5A7A2 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCD018EF97BCDA3F7491DC56BEDC2F1 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A4255378CFD9B74D53141AE1A82490E /* Debug */,
+				47A2558475713FFD9B61604AF8D2F186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431C12F3AEB27A35727D36FCDDA83E9D /* Build configuration list for PBXNativeTarget "RAMPaperSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10CFDA47B390F2F7D60948723988ACD /* Debug */,
+				49E6BDADCA499D685B0141773C1DA230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4895A8EDEC97D41135897F0940BDF789 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24B30D6A602DE6E0D36F5581F714A36 /* Debug */,
+				EFD028D25D7175B7C8BB5703291A5FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AEF5299920DB42D9941BCB65363E714 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B3C65BB79C44AD8BC0A953DF9083BA /* Debug */,
+				299A9F812B14C34D32B44CF62FA67ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64332872CA000F9586A1EE3AB7931A2F /* Build configuration list for PBXNativeTarget "KCFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D41F848DFD5039817C823AF0A1D2B64 /* Debug */,
+				5A26E7B3D7E9F7ECF928C8C3160C9829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67692CF6C68749EC41F1ABA38D55A3C0 /* Build configuration list for PBXNativeTarget "GearRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D58A08F3164D631123E930EFCD390FF /* Debug */,
+				15F29F9BCCABC061F1F9066CAE1350E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C643D3ADE44B11F6A50874554F1A604 /* Build configuration list for PBXNativeTarget "Pods-Where Is My Money IOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC28B5E3ED78DAE0386370C7F79C29EF /* Debug */,
+				43811EEA64F9B6AFB9706E590B807CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		777743DE59864EC1F4A610E0D1ACEC75 /* Build configuration list for PBXNativeTarget "PermissionScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A788870586BD07C7FA2E890182F3E69 /* Debug */,
+				77B21CABDF285E977C2C2EA7002FDAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60CD877A708870E2BE96B83BA32F883 /* Debug */,
+				F066921CBDBDB5F45795E50FBC5AC972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
