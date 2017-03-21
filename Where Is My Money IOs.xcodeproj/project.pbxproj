@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840141A51E81465E003A558E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141A41E81465E003A558E /* AppDelegate.swift */; };
+		840141A71E81465E003A558E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141A61E81465E003A558E /* ViewController.swift */; };
+		840141AA1E81465E003A558E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840141A81E81465E003A558E /* Main.storyboard */; };
+		840141AD1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840141AB1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld */; };
+		840141AF1E81465E003A558E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840141AE1E81465E003A558E /* Assets.xcassets */; };
+		840141B21E81465E003A558E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840141B01E81465E003A558E /* LaunchScreen.storyboard */; };
+		840141BD1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141BC1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift */; };
+		840141C81E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141C71E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840141B91E81465F003A558E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840141991E81465E003A558E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840141A01E81465E003A558E;
+			remoteInfo = "Where Is My Money IOs";
+		};
+		840141C41E81465F003A558E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840141991E81465E003A558E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840141A01E81465E003A558E;
+			remoteInfo = "Where Is My Money IOs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840141A11E81465E003A558E /* Where Is My Money IOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where Is My Money IOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840141A41E81465E003A558E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840141A61E81465E003A558E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840141A91E81465E003A558E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840141AC1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Where_Is_My_Money_IOs.xcdatamodel; sourceTree = "<group>"; };
+		840141AE1E81465E003A558E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840141B11E81465E003A558E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840141B31E81465E003A558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840141B81E81465F003A558E /* Where Is My Money IOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where Is My Money IOsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840141BC1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_Is_My_Money_IOsTests.swift; sourceTree = "<group>"; };
+		840141BE1E81465F003A558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840141C31E81465F003A558E /* Where Is My Money IOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where Is My Money IOsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840141C71E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_Is_My_Money_IOsUITests.swift; sourceTree = "<group>"; };
+		840141C91E81465F003A558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8401419E1E81465E003A558E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141B51E81465F003A558E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141C01E81465F003A558E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840141981E81465E003A558E = {
+			isa = PBXGroup;
+			children = (
+				840141A31E81465E003A558E /* Where Is My Money IOs */,
+				840141BB1E81465F003A558E /* Where Is My Money IOsTests */,
+				840141C61E81465F003A558E /* Where Is My Money IOsUITests */,
+				840141A21E81465E003A558E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840141A21E81465E003A558E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840141A11E81465E003A558E /* Where Is My Money IOs.app */,
+				840141B81E81465F003A558E /* Where Is My Money IOsTests.xctest */,
+				840141C31E81465F003A558E /* Where Is My Money IOsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840141A31E81465E003A558E /* Where Is My Money IOs */ = {
+			isa = PBXGroup;
+			children = (
+				840141A41E81465E003A558E /* AppDelegate.swift */,
+				840141A61E81465E003A558E /* ViewController.swift */,
+				840141A81E81465E003A558E /* Main.storyboard */,
+				840141AE1E81465E003A558E /* Assets.xcassets */,
+				840141B01E81465E003A558E /* LaunchScreen.storyboard */,
+				840141B31E81465E003A558E /* Info.plist */,
+				840141AB1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld */,
+			);
+			path = "Where Is My Money IOs";
+			sourceTree = "<group>";
+		};
+		840141BB1E81465F003A558E /* Where Is My Money IOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				840141BC1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift */,
+				840141BE1E81465F003A558E /* Info.plist */,
+			);
+			path = "Where Is My Money IOsTests";
+			sourceTree = "<group>";
+		};
+		840141C61E81465F003A558E /* Where Is My Money IOsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				840141C71E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift */,
+				840141C91E81465F003A558E /* Info.plist */,
+			);
+			path = "Where Is My Money IOsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840141A01E81465E003A558E /* Where Is My Money IOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840141CC1E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOs" */;
+			buildPhases = (
+				8401419D1E81465E003A558E /* Sources */,
+				8401419E1E81465E003A558E /* Frameworks */,
+				8401419F1E81465E003A558E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Where Is My Money IOs";
+			productName = "Where Is My Money IOs";
+			productReference = 840141A11E81465E003A558E /* Where Is My Money IOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840141B71E81465F003A558E /* Where Is My Money IOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840141CF1E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOsTests" */;
+			buildPhases = (
+				840141B41E81465F003A558E /* Sources */,
+				840141B51E81465F003A558E /* Frameworks */,
+				840141B61E81465F003A558E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840141BA1E81465F003A558E /* PBXTargetDependency */,
+			);
+			name = "Where Is My Money IOsTests";
+			productName = "Where Is My Money IOsTests";
+			productReference = 840141B81E81465F003A558E /* Where Is My Money IOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		840141C21E81465F003A558E /* Where Is My Money IOsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840141D21E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOsUITests" */;
+			buildPhases = (
+				840141BF1E81465F003A558E /* Sources */,
+				840141C01E81465F003A558E /* Frameworks */,
+				840141C11E81465F003A558E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840141C51E81465F003A558E /* PBXTargetDependency */,
+			);
+			name = "Where Is My Money IOsUITests";
+			productName = "Where Is My Money IOsUITests";
+			productReference = 840141C31E81465F003A558E /* Where Is My Money IOsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840141991E81465E003A558E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ricardo Barbosa";
+				TargetAttributes = {
+					840141A01E81465E003A558E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9GX62FR565;
+						ProvisioningStyle = Automatic;
+					};
+					840141B71E81465F003A558E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9GX62FR565;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840141A01E81465E003A558E;
+					};
+					840141C21E81465F003A558E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9GX62FR565;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840141A01E81465E003A558E;
+					};
+				};
+			};
+			buildConfigurationList = 8401419C1E81465E003A558E /* Build configuration list for PBXProject "Where Is My Money IOs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840141981E81465E003A558E;
+			productRefGroup = 840141A21E81465E003A558E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840141A01E81465E003A558E /* Where Is My Money IOs */,
+				840141B71E81465F003A558E /* Where Is My Money IOsTests */,
+				840141C21E81465F003A558E /* Where Is My Money IOsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8401419F1E81465E003A558E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840141B21E81465E003A558E /* LaunchScreen.storyboard in Resources */,
+				840141AF1E81465E003A558E /* Assets.xcassets in Resources */,
+				840141AA1E81465E003A558E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141B61E81465F003A558E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141C11E81465F003A558E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8401419D1E81465E003A558E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840141A71E81465E003A558E /* ViewController.swift in Sources */,
+				840141A51E81465E003A558E /* AppDelegate.swift in Sources */,
+				840141AD1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141B41E81465F003A558E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840141BD1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840141BF1E81465F003A558E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840141C81E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840141BA1E81465F003A558E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840141A01E81465E003A558E /* Where Is My Money IOs */;
+			targetProxy = 840141B91E81465F003A558E /* PBXContainerItemProxy */;
+		};
+		840141C51E81465F003A558E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840141A01E81465E003A558E /* Where Is My Money IOs */;
+			targetProxy = 840141C41E81465F003A558E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840141A81E81465E003A558E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840141A91E81465E003A558E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840141B01E81465E003A558E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840141B11E81465E003A558E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840141CA1E81465F003A558E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840141CB1E81465F003A558E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840141CD1E81465F003A558E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		840141CE1E81465F003A558E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		840141D01E81465F003A558E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Where Is My Money IOs.app/Where Is My Money IOs";
+			};
+			name = Debug;
+		};
+		840141D11E81465F003A558E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Where Is My Money IOs.app/Where Is My Money IOs";
+			};
+			name = Release;
+		};
+		840141D31E81465F003A558E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Where Is My Money IOs";
+			};
+			name = Debug;
+		};
+		840141D41E81465F003A558E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9GX62FR565;
+				INFOPLIST_FILE = "Where Is My Money IOsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ricardosbarbosa.Where-Is-My-Money-IOsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Where Is My Money IOs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8401419C1E81465E003A558E /* Build configuration list for PBXProject "Where Is My Money IOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840141CA1E81465F003A558E /* Debug */,
+				840141CB1E81465F003A558E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840141CC1E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840141CD1E81465F003A558E /* Debug */,
+				840141CE1E81465F003A558E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		840141CF1E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840141D01E81465F003A558E /* Debug */,
+				840141D11E81465F003A558E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		840141D21E81465F003A558E /* Build configuration list for PBXNativeTarget "Where Is My Money IOsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840141D31E81465F003A558E /* Debug */,
+				840141D41E81465F003A558E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		840141AB1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				840141AC1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodel */,
+			);
+			currentVersion = 840141AC1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodel */;
+			path = Where_Is_My_Money_IOs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 840141991E81465E003A558E /* Project object */;
+}
