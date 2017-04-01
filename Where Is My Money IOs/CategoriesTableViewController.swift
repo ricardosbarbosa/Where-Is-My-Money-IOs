@@ -1,18 +1,19 @@
 //
-//  TransactionsTableViewController.swift
+//  CategoriesTableViewController.swift
 //  Where Is My Money IOs
 //
-//  Created by Ricardo Barbosa on 21/03/17.
+//  Created by Ricardo Barbosa on 22/03/17.
 //  Copyright © 2017 Ricardo Barbosa. All rights reserved.
 //
 
 import UIKit
 import Firebase
+import KCFloatingActionButton
 
-class TransactionsTableViewController: UITableViewController {
+class CategoriesTableViewController: UITableViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "transactions")
-  var items: [Transaction] = []
+  let ref = FIRDatabase.database().reference(withPath: "categories")
+  var items: [Category] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,7 +23,6 @@ class TransactionsTableViewController: UITableViewController {
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    //self.performSegue(withIdentifier: "TransactionFormViewController",
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -31,12 +31,13 @@ class TransactionsTableViewController: UITableViewController {
     self.tabBarController?.navigationItem.title = navigationItem.title
     self.tabBarController?.navigationItem.rightBarButtonItem = navigationItem.rightBarButtonItem
     
-    ref.queryOrdered(byChild: "date").observe(.value, with: { snapshot in
-      var newItems: [Transaction] = []
+    ref.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+      print(snapshot.value)
+      var newItems: [Category] = []
       
       for item in snapshot.children {
-        let groceryItem = Transaction(snapshot: item as! FIRDataSnapshot)
-        newItems.append(groceryItem)
+        let categoryItem = Category(snapshot: item as! FIRDataSnapshot)
+        newItems.append(categoryItem)
       }
       
       self.items = newItems
@@ -44,10 +45,33 @@ class TransactionsTableViewController: UITableViewController {
     })
   }
   
+  @IBAction func addCategory(_ sender: Any) {
+    let alert = UIAlertController(title: "Category Item",
+                                  message: "Add an Item",
+                                  preferredStyle: .alert)
+    
+    let saveAction = UIAlertAction(title: "Save",
+                                   style: .default) { _ in
+                                    guard let textField = alert.textFields?.first,
+                                      let text = textField.text else { return }
+                                    let groceryItem = Category(name: text)
+                                    let groceryItemRef = self.ref.child(text.lowercased())
+                                    groceryItemRef.setValue(groceryItem.any)
+    }
+    
+    let cancelAction = UIAlertAction(title: "Cancel",
+                                     style: .default)     
+    alert.addTextField()
+    
+    alert.addAction(saveAction)
+    alert.addAction(cancelAction)
+    
+    present(alert, animated: true, completion: nil)
+
+  }
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
-    // TODO: next version will agrupater the transactions by day
     return 1
   }
   
@@ -56,9 +80,9 @@ class TransactionsTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TransactionTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     let item = items[indexPath.row]
-    cell.item = item
+    cell.textLabel?.text = item.name
     return cell
   }
   
@@ -74,10 +98,8 @@ class TransactionsTableViewController: UITableViewController {
   // Override to support editing the table view.
   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
-      // Delete the row from the data source
-      tableView.deleteRows(at: [indexPath], with: .fade)
-    } else if editingStyle == .insert {
-      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+      let item = items[indexPath.row]
+      item.ref?.removeValue()
     }
   }
   
@@ -108,3 +130,4 @@ class TransactionsTableViewController: UITableViewController {
    */
   
 }
+

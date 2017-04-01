@@ -16,9 +16,17 @@
 		840141B21E81465E003A558E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840141B01E81465E003A558E /* LaunchScreen.storyboard */; };
 		840141BD1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141BC1E81465F003A558E /* Where_Is_My_Money_IOsTests.swift */; };
 		840141C81E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840141C71E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift */; };
+		849A15AF1E82B24800A09CCB /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15AE1E82B24800A09CCB /* Transaction.swift */; };
+		849A15B11E82B2EF00A09CCB /* CategoryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15B01E82B2EF00A09CCB /* CategoryTransaction.swift */; };
+		849A15B31E82B33900A09CCB /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15B21E82B33900A09CCB /* Account.swift */; };
+		849A15B61E82BE6900A09CCB /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15B51E82BE6900A09CCB /* CategoriesTableViewController.swift */; };
+		849A15B81E82C4BF00A09CCB /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15B71E82C4BF00A09CCB /* AccountsTableViewController.swift */; };
+		849A15BA1E82C9C600A09CCB /* AccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15B91E82C9C600A09CCB /* AccountFormViewController.swift */; };
+		849A15BD1E82D7EE00A09CCB /* TransactionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15BC1E82D7EE00A09CCB /* TransactionFormViewController.swift */; };
+		849A15BF1E831BE400A09CCB /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15BE1E831BE400A09CCB /* TransactionTableViewCell.swift */; };
+		849A15C11E831BF400A09CCB /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15C01E831BF400A09CCB /* AccountTableViewCell.swift */; };
 		84A4EDCB1E8147F5002A9EA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A4EDCA1E8147F5002A9EA8 /* GoogleService-Info.plist */; };
 		84A4EDCD1E814B65002A9EA8 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */; };
-		84A4EDD31E81529C002A9EA8 /* FireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4EDD21E81529C002A9EA8 /* FireViewController.swift */; };
 		DF2323E5156D793F92D747FB /* Pods_Where_Is_My_Money_IOsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39367F676A67ECED8B8DB28 /* Pods_Where_Is_My_Money_IOsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,9 +67,17 @@
 		840141C31E81465F003A558E /* Where Is My Money IOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where Is My Money IOsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840141C71E81465F003A558E /* Where_Is_My_Money_IOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_Is_My_Money_IOsUITests.swift; sourceTree = "<group>"; };
 		840141C91E81465F003A558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849A15AE1E82B24800A09CCB /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		849A15B01E82B2EF00A09CCB /* CategoryTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTransaction.swift; sourceTree = "<group>"; };
+		849A15B21E82B33900A09CCB /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		849A15B51E82BE6900A09CCB /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		849A15B71E82C4BF00A09CCB /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
+		849A15B91E82C9C600A09CCB /* AccountFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountFormViewController.swift; sourceTree = "<group>"; };
+		849A15BC1E82D7EE00A09CCB /* TransactionFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionFormViewController.swift; sourceTree = "<group>"; };
+		849A15BE1E831BE400A09CCB /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		849A15C01E831BF400A09CCB /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		84A4EDCA1E8147F5002A9EA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
-		84A4EDD21E81529C002A9EA8 /* FireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireViewController.swift; sourceTree = "<group>"; };
 		9DA446FA6CEAE14D192D0432 /* Pods-Where Is My Money IOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where Is My Money IOs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Where Is My Money IOs/Pods-Where Is My Money IOs.release.xcconfig"; sourceTree = "<group>"; };
 		D39367F676A67ECED8B8DB28 /* Pods_Where_Is_My_Money_IOsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where_Is_My_Money_IOsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F019B2ED202CBA693A013F2A /* Pods_Where_Is_My_Money_IOsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where_Is_My_Money_IOsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,12 +149,14 @@
 		840141A31E81465E003A558E /* Where Is My Money IOs */ = {
 			isa = PBXGroup;
 			children = (
-				840141A41E81465E003A558E /* AppDelegate.swift */,
-				84A4EDD61E8155FF002A9EA8 /* datasources */,
+				849A15B41E82BB1E00A09CCB /* others */,
+				849A15AD1E82B23500A09CCB /* models */,
 				84A4EDCE1E814B77002A9EA8 /* controllers */,
+				84A4EDD61E8155FF002A9EA8 /* datasources */,
 				84A4EDCF1E814B8B002A9EA8 /* views */,
-				84A4EDD01E814B9B002A9EA8 /* utils */,
+				84A4EDD01E814B9B002A9EA8 /* supporting files */,
 				84A4EDD11E814BA8002A9EA8 /* database */,
+				840141AE1E81465E003A558E /* Assets.xcassets */,
 			);
 			path = "Where Is My Money IOs";
 			sourceTree = "<group>";
@@ -161,11 +179,34 @@
 			path = "Where Is My Money IOsUITests";
 			sourceTree = "<group>";
 		};
+		849A15AD1E82B23500A09CCB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				849A15B21E82B33900A09CCB /* Account.swift */,
+				849A15AE1E82B24800A09CCB /* Transaction.swift */,
+				849A15B01E82B2EF00A09CCB /* CategoryTransaction.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		849A15B41E82BB1E00A09CCB /* others */ = {
+			isa = PBXGroup;
+			children = (
+				840141A41E81465E003A558E /* AppDelegate.swift */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
 		84A4EDCE1E814B77002A9EA8 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84A4EDD21E81529C002A9EA8 /* FireViewController.swift */,
 				84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */,
+				849A15BC1E82D7EE00A09CCB /* TransactionFormViewController.swift */,
+				849A15BE1E831BE400A09CCB /* TransactionTableViewCell.swift */,
+				849A15B51E82BE6900A09CCB /* CategoriesTableViewController.swift */,
+				849A15B71E82C4BF00A09CCB /* AccountsTableViewController.swift */,
+				849A15B91E82C9C600A09CCB /* AccountFormViewController.swift */,
+				849A15C01E831BF400A09CCB /* AccountTableViewCell.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -179,14 +220,13 @@
 			name = views;
 			sourceTree = "<group>";
 		};
-		84A4EDD01E814B9B002A9EA8 /* utils */ = {
+		84A4EDD01E814B9B002A9EA8 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				840141AE1E81465E003A558E /* Assets.xcassets */,
 				840141B31E81465E003A558E /* Info.plist */,
 				84A4EDCA1E8147F5002A9EA8 /* GoogleService-Info.plist */,
 			);
-			name = utils;
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 		84A4EDD11E814BA8002A9EA8 /* database */ = {
@@ -499,10 +539,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A4EDD31E81529C002A9EA8 /* FireViewController.swift in Sources */,
+				849A15C11E831BF400A09CCB /* AccountTableViewCell.swift in Sources */,
+				849A15BA1E82C9C600A09CCB /* AccountFormViewController.swift in Sources */,
+				849A15B11E82B2EF00A09CCB /* CategoryTransaction.swift in Sources */,
 				840141A51E81465E003A558E /* AppDelegate.swift in Sources */,
+				849A15B61E82BE6900A09CCB /* CategoriesTableViewController.swift in Sources */,
+				849A15B81E82C4BF00A09CCB /* AccountsTableViewController.swift in Sources */,
 				840141AD1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld in Sources */,
+				849A15BD1E82D7EE00A09CCB /* TransactionFormViewController.swift in Sources */,
 				84A4EDCD1E814B65002A9EA8 /* TransactionsTableViewController.swift in Sources */,
+				849A15AF1E82B24800A09CCB /* Transaction.swift in Sources */,
+				849A15BF1E831BE400A09CCB /* TransactionTableViewCell.swift in Sources */,
+				849A15B31E82B33900A09CCB /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,18 @@
 //
-//  TransactionsTableViewController.swift
+//  AccountsTableViewController.swift
 //  Where Is My Money IOs
 //
-//  Created by Ricardo Barbosa on 21/03/17.
+//  Created by Ricardo Barbosa on 22/03/17.
 //  Copyright © 2017 Ricardo Barbosa. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class TransactionsTableViewController: UITableViewController {
+class AccountsTableViewController: UITableViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "transactions")
-  var items: [Transaction] = []
+  let ref = FIRDatabase.database().reference(withPath: "accounts")
+  var items: [Account] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,7 +22,6 @@ class TransactionsTableViewController: UITableViewController {
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    //self.performSegue(withIdentifier: "TransactionFormViewController",
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -31,12 +30,13 @@ class TransactionsTableViewController: UITableViewController {
     self.tabBarController?.navigationItem.title = navigationItem.title
     self.tabBarController?.navigationItem.rightBarButtonItem = navigationItem.rightBarButtonItem
     
-    ref.queryOrdered(byChild: "date").observe(.value, with: { snapshot in
-      var newItems: [Transaction] = []
+    ref.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+      print(snapshot.value)
+      var newItems: [Account] = []
       
       for item in snapshot.children {
-        let groceryItem = Transaction(snapshot: item as! FIRDataSnapshot)
-        newItems.append(groceryItem)
+        let categoryItem = Account(snapshot: item as! FIRDataSnapshot)
+        newItems.append(categoryItem)
       }
       
       self.items = newItems
@@ -47,7 +47,6 @@ class TransactionsTableViewController: UITableViewController {
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
-    // TODO: next version will agrupater the transactions by day
     return 1
   }
   
@@ -56,7 +55,7 @@ class TransactionsTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TransactionTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! AccountTableViewCell
     let item = items[indexPath.row]
     cell.item = item
     return cell
@@ -74,10 +73,8 @@ class TransactionsTableViewController: UITableViewController {
   // Override to support editing the table view.
   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
-      // Delete the row from the data source
-      tableView.deleteRows(at: [indexPath], with: .fade)
-    } else if editingStyle == .insert {
-      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+      let item = items[indexPath.row]
+      item.ref?.removeValue()
     }
   }
   
