@@ -9,23 +9,30 @@
 import UIKit
 import Eureka
 import Firebase
+import FirebaseAuth
 
 class TransactionFormViewController: FormViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "transactions")
-  let refTransfers = FIRDatabase.database().reference(withPath: "transfers")
+  var ref : FIRDatabaseReference?
+  var refTransfers : FIRDatabaseReference?
+  var refCategories : FIRDatabaseReference?
+  var refAccounts : FIRDatabaseReference?
   
-  let refCategories = FIRDatabase.database().reference(withPath: "categories")
   var categories: [Category] = []
-  
-  let refAccounts = FIRDatabase.database().reference(withPath: "accounts")
   var accounts: [Account] = []
-
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    refCategories.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+    if let user = FIRAuth.auth()?.currentUser {
+      ref = FIRDatabase.database().reference(withPath: user.uid).child("transactions")
+      refTransfers = FIRDatabase.database().reference(withPath: user.uid).child("transfers")
+      refCategories = FIRDatabase.database().reference(withPath: user.uid).child("categories")
+      refAccounts = FIRDatabase.database().reference(withPath: user.uid).child("accounts")
+    }
+    
+    refCategories?.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
       var newItems: [Category] = []
       
       for item in snapshot.children {
@@ -37,7 +44,7 @@ class TransactionFormViewController: FormViewController {
       self.createForm()
     })
     
-    refAccounts.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+    refAccounts?.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
       var newItems: [Account] = []
       
       for item in snapshot.children {
@@ -48,8 +55,6 @@ class TransactionFormViewController: FormViewController {
       self.accounts = newItems
       self.createForm()
     })
-  
-    
     
   }
   
@@ -69,8 +74,8 @@ class TransactionFormViewController: FormViewController {
         $0.tag = "TypeRow"
         $0.options = [.income,.expense,.transfer]
         $0.value = .income
-    }
-    
+      }
+      
       +++ Section()
       
       <<< DateRow() {
@@ -103,7 +108,7 @@ class TransactionFormViewController: FormViewController {
         $0.value = nil
         $0.selectorTitle = "Choose a Account"
       }
-
+      
       <<< PushRow<Account>() {
         $0.tag = "AccountDestinyPushRow"
         $0.title = "Destiny Account"
@@ -114,7 +119,7 @@ class TransactionFormViewController: FormViewController {
           return !((form.rowBy(tag: "TypeRow") as? SegmentedRow<Transaction.TransactionType>)?.value == .transfer)
         })
       }
-
+      
       <<< PushRow<Category>() {
         $0.tag = "CategoryPushRow"
         $0.title = "Category"
@@ -137,24 +142,61 @@ class TransactionFormViewController: FormViewController {
     let detail = textRow!.value!
     let value = decimalRow!.value!
     let type = typeRow!.value!
-    let account = pushAccountRow!.value!
+    var account = pushAccountRow!.value!
     let category = pushCategoryRow!.value!
     
     let transaction = Transaction(date: date, detail: detail, value: value, type: type, account: account, category: category)
     
-    let transactionRef = self.ref.childByAutoId()
-    transactionRef.setValue(transaction.any)
+    print(account.key)
     
-    if type == .transfer {
-      let pushDestinyAccountRow : PushRow<Account>? = form.rowBy(tag: "AccountDestinyPushRow")
-      let accountDestiny = pushDestinyAccountRow!.value!
-      let transfer = TransferTransaction(transaction: transaction, destiny_account: accountDestiny)
-      
-      let transferRef = self.refTransfers.childByAutoId()
-      var values = transfer.any as? [String: Any]
-      values?["transaction_key"] = transactionRef.key
-      transferRef.setValue(values)
+    if let refAccount = refAccounts?.child(account.key) {
+      refAccount.runTransactionBlock({ (currentData: FIRMutableData) -> FIRTransactionResult in
+        
+        if let transactionRef = self.ref?.childByAutoId() {
+          transactionRef.setValue(transaction.any)
+          
+          if type == .income {
+            account.amount += transaction.value
+          }
+          else if type == .expense {
+            account.amount -= transaction.value
+          }
+          else if type == .transfer {
+            let pushDestinyAccountRow : PushRow<Account>? = self.form.rowBy(tag: "AccountDestinyPushRow")
+            var accountDestiny = pushDestinyAccountRow!.value!
+            let transfer = TransferTransaction(transaction: transaction, destiny_account: accountDestiny)
+            
+            if let refAccountDestiny = self.refAccounts?.child(accountDestiny.key) {
+              account.amount -= transaction.value
+              accountDestiny.amount += transaction.value
+              refAccountDestiny.setValue(accountDestiny.any)
+            }
+            
+            if let transferRef = self.refTransfers?.childByAutoId() {
+              var values = transfer.any as? [String: Any]
+              values?["transaction_key"] = transactionRef.key
+              transferRef.setValue(values)
+              
+            }
+          }
+        }
+        
+        // Set value and report transaction success
+        currentData.value = account.any
+        
+        return FIRTransactionResult.success(withValue: currentData)
+      })
+        
+      { (error, committed, snapshot) in
+        if let error = error {
+          print(error.localizedDescription)
+        }
+      }
     }
+    
+    
+    
+    
     
     _ = navigationController?.popViewController(animated: true)
   }

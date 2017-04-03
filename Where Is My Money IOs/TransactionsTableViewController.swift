@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class TransactionsTableViewController: UITableViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "transactions")
+  var ref : FIRDatabaseReference?
   var items: [Transaction] = []
   
   override func viewDidLoad() {
@@ -31,12 +32,16 @@ class TransactionsTableViewController: UITableViewController {
     self.tabBarController?.navigationItem.title = navigationItem.title
     self.tabBarController?.navigationItem.rightBarButtonItem = navigationItem.rightBarButtonItem
     
-    ref.queryOrdered(byChild: "date").observe(.value, with: { snapshot in
+    if let user = FIRAuth.auth()?.currentUser {
+      ref = FIRDatabase.database().reference(withPath: user.uid).child("transactions")
+    }
+    
+    ref?.queryOrdered(byChild: "date").observe(.value, with: { snapshot in
       var newItems: [Transaction] = []
       
       for item in snapshot.children {
-        let groceryItem = Transaction(snapshot: item as! FIRDataSnapshot)
-        newItems.append(groceryItem)
+        let item = Transaction(snapshot: item as! FIRDataSnapshot)
+        newItems.append(item)
       }
       
       self.items = newItems

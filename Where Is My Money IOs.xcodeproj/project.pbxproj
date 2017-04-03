@@ -27,6 +27,11 @@
 		849A15C11E831BF400A09CCB /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A15C01E831BF400A09CCB /* AccountTableViewCell.swift */; };
 		84A4EDCB1E8147F5002A9EA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A4EDCA1E8147F5002A9EA8 /* GoogleService-Info.plist */; };
 		84A4EDCD1E814B65002A9EA8 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */; };
+		84A647221E9034A400EAD723 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A647211E9034A400EAD723 /* Api.swift */; };
+		84A647261E905DFB00EAD723 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A647251E905DFB00EAD723 /* LoginViewController.swift */; };
+		84A647281E905F3400EAD723 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A647271E905F3400EAD723 /* User.swift */; };
+		84A6472A1E90612800EAD723 /* WISMMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A647291E90612800EAD723 /* WISMMTabBarViewController.swift */; };
+		84A9ABD51E90B844008AE50F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9ABD41E90B844008AE50F /* Extensions.swift */; };
 		DF2323E5156D793F92D747FB /* Pods_Where_Is_My_Money_IOsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39367F676A67ECED8B8DB28 /* Pods_Where_Is_My_Money_IOsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +83,11 @@
 		849A15C01E831BF400A09CCB /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		84A4EDCA1E8147F5002A9EA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
+		84A647211E9034A400EAD723 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		84A647251E905DFB00EAD723 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84A647271E905F3400EAD723 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84A647291E90612800EAD723 /* WISMMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WISMMTabBarViewController.swift; sourceTree = "<group>"; };
+		84A9ABD41E90B844008AE50F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9DA446FA6CEAE14D192D0432 /* Pods-Where Is My Money IOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where Is My Money IOs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Where Is My Money IOs/Pods-Where Is My Money IOs.release.xcconfig"; sourceTree = "<group>"; };
 		D39367F676A67ECED8B8DB28 /* Pods_Where_Is_My_Money_IOsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where_Is_My_Money_IOsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F019B2ED202CBA693A013F2A /* Pods_Where_Is_My_Money_IOsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Where_Is_My_Money_IOsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +159,7 @@
 		840141A31E81465E003A558E /* Where Is My Money IOs */ = {
 			isa = PBXGroup;
 			children = (
+				84A647201E90347900EAD723 /* api */,
 				849A15B41E82BB1E00A09CCB /* others */,
 				849A15AD1E82B23500A09CCB /* models */,
 				84A4EDCE1E814B77002A9EA8 /* controllers */,
@@ -185,6 +196,7 @@
 				849A15B21E82B33900A09CCB /* Account.swift */,
 				849A15AE1E82B24800A09CCB /* Transaction.swift */,
 				849A15B01E82B2EF00A09CCB /* CategoryTransaction.swift */,
+				84A647271E905F3400EAD723 /* User.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				840141A41E81465E003A558E /* AppDelegate.swift */,
+				84A9ABD41E90B844008AE50F /* Extensions.swift */,
 			);
 			name = others;
 			sourceTree = "<group>";
@@ -200,6 +213,8 @@
 		84A4EDCE1E814B77002A9EA8 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84A647251E905DFB00EAD723 /* LoginViewController.swift */,
+				84A647291E90612800EAD723 /* WISMMTabBarViewController.swift */,
 				84A4EDCC1E814B65002A9EA8 /* TransactionsTableViewController.swift */,
 				849A15BC1E82D7EE00A09CCB /* TransactionFormViewController.swift */,
 				849A15BE1E831BE400A09CCB /* TransactionTableViewCell.swift */,
@@ -242,6 +257,14 @@
 			children = (
 			);
 			name = datasources;
+			sourceTree = "<group>";
+		};
+		84A647201E90347900EAD723 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				84A647211E9034A400EAD723 /* Api.swift */,
+			);
+			name = api;
 			sourceTree = "<group>";
 		};
 		E6353F2139EED59C913C6BE9 /* Frameworks */ = {
@@ -539,16 +562,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A647261E905DFB00EAD723 /* LoginViewController.swift in Sources */,
 				849A15C11E831BF400A09CCB /* AccountTableViewCell.swift in Sources */,
+				84A6472A1E90612800EAD723 /* WISMMTabBarViewController.swift in Sources */,
 				849A15BA1E82C9C600A09CCB /* AccountFormViewController.swift in Sources */,
 				849A15B11E82B2EF00A09CCB /* CategoryTransaction.swift in Sources */,
 				840141A51E81465E003A558E /* AppDelegate.swift in Sources */,
 				849A15B61E82BE6900A09CCB /* CategoriesTableViewController.swift in Sources */,
 				849A15B81E82C4BF00A09CCB /* AccountsTableViewController.swift in Sources */,
+				84A647221E9034A400EAD723 /* Api.swift in Sources */,
+				84A647281E905F3400EAD723 /* User.swift in Sources */,
 				840141AD1E81465E003A558E /* Where_Is_My_Money_IOs.xcdatamodeld in Sources */,
 				849A15BD1E82D7EE00A09CCB /* TransactionFormViewController.swift in Sources */,
 				84A4EDCD1E814B65002A9EA8 /* TransactionsTableViewController.swift in Sources */,
 				849A15AF1E82B24800A09CCB /* Transaction.swift in Sources */,
+				84A9ABD51E90B844008AE50F /* Extensions.swift in Sources */,
 				849A15BF1E831BE400A09CCB /* TransactionTableViewCell.swift in Sources */,
 				849A15B31E82B33900A09CCB /* Account.swift in Sources */,
 			);

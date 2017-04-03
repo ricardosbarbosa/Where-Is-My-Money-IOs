@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class AccountsTableViewController: UITableViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "accounts")
+  var ref : FIRDatabaseReference?
   var items: [Account] = []
   
   override func viewDidLoad() {
@@ -30,7 +31,11 @@ class AccountsTableViewController: UITableViewController {
     self.tabBarController?.navigationItem.title = navigationItem.title
     self.tabBarController?.navigationItem.rightBarButtonItem = navigationItem.rightBarButtonItem
     
-    ref.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+    if let user = FIRAuth.auth()?.currentUser {
+      ref = FIRDatabase.database().reference(withPath: user.uid).child("accounts")
+    }
+    
+    ref?.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
       print(snapshot.value)
       var newItems: [Account] = []
       
@@ -55,10 +60,38 @@ class AccountsTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! AccountTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     let item = items[indexPath.row]
-    cell.item = item
+    
+    cell.textLabel?.text = item.name
+    cell.detailTextLabel?.text = String(format: "%.2f", item.amount )
+    
+    
     return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    switch items[indexPath.row].amount  {
+    case let x where x < 0.0:
+      cell.backgroundColor = UIColor(red: 255.0/255.0, green: 59.0/255.0, blue: 48.0/255.0, alpha: 1.0)
+    case let x where x > 0.0:
+      cell.backgroundColor = UIColor(red: 76.0/255.0, green: 217.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+    case _:
+      cell.backgroundColor = UIColor(red: 44.0/255.0, green: 186.0/255.0, blue: 231.0/255.0, alpha: 1.0)
+    }
+    
+    cell.textLabel!.textColor = UIColor.white
+    cell.detailTextLabel!.textColor = UIColor.white
+    cell.textLabel!.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 30)
+    cell.detailTextLabel!.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 30)
+    cell.textLabel!.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25)
+    cell.textLabel!.shadowOffset = CGSize(width: 0, height: 1)
+    cell.detailTextLabel!.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25)
+    cell.detailTextLabel!.shadowOffset = CGSize(width: 0, height: 1)
+  }
+  
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 120
   }
   
   /*

@@ -9,17 +9,23 @@
 import UIKit
 import Eureka
 import Firebase
+import FirebaseAuth
 
 class AccountFormViewController: FormViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "accounts")
+  var ref : FIRDatabaseReference?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    if let user = FIRAuth.auth()?.currentUser {
+      ref = FIRDatabase.database().reference(withPath: user.uid).child("accounts")
+    }
     
     createForm()
+    
   }
+  
   
   func createForm() {
     URLRow.defaultCellUpdate = { cell, row in cell.textField.textColor = .blue }
@@ -82,8 +88,9 @@ class AccountFormViewController: FormViewController {
     let type = pushRow?.value ?? .money
     
     let item = Account(name: name, type: type, amount: ammount)
-    let groceryItemRef = self.ref.childByAutoId()
-    groceryItemRef.setValue(item.any)
+    if let itemRef = self.ref?.childByAutoId() {
+      itemRef.setValue(item.any)
+    }
     
     _ = navigationController?.popViewController(animated: true)
   }

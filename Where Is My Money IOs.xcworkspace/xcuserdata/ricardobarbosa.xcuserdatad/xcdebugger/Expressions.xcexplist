@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "StocksTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:StocksTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;\(stocks[indexPath.row].1)&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TransactionsTableViewController.viewDidAppear(Bool) -&gt; ():TransactionsTableViewController.swift">
          <PersistentStrings>
             <PersistentString

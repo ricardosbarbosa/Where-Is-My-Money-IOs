@@ -8,11 +8,11 @@
 
 import UIKit
 import Firebase
-import KCFloatingActionButton
+import FirebaseAuth
 
 class CategoriesTableViewController: UITableViewController {
   
-  let ref = FIRDatabase.database().reference(withPath: "categories")
+  var ref : FIRDatabaseReference?
   var items: [Category] = []
   
   override func viewDidLoad() {
@@ -31,8 +31,12 @@ class CategoriesTableViewController: UITableViewController {
     self.tabBarController?.navigationItem.title = navigationItem.title
     self.tabBarController?.navigationItem.rightBarButtonItem = navigationItem.rightBarButtonItem
     
-    ref.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
-      print(snapshot.value)
+    if let user = FIRAuth.auth()?.currentUser {
+      ref = FIRDatabase.database().reference(withPath: user.uid).child("categories")
+    }
+    
+    ref?.queryOrdered(byChild: "name").observe(.value, with: { snapshot in
+      print(snapshot.value ?? "oxe")
       var newItems: [Category] = []
       
       for item in snapshot.children {
@@ -54,9 +58,9 @@ class CategoriesTableViewController: UITableViewController {
                                    style: .default) { _ in
                                     guard let textField = alert.textFields?.first,
                                       let text = textField.text else { return }
-                                    let groceryItem = Category(name: text)
-                                    let groceryItemRef = self.ref.child(text.lowercased())
-                                    groceryItemRef.setValue(groceryItem.any)
+                                    let item = Category(name: text)
+                                    let itemRef = self.ref?.child(text.lowercased())
+                                    itemRef?.setValue(item.any)
     }
     
     let cancelAction = UIAlertAction(title: "Cancel",

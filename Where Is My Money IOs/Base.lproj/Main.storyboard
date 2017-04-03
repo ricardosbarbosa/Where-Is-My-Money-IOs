@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kuc-qm-igQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oEX-GP-4xd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,19 @@
                             <outlet property="delegate" destination="m57-db-eKI" id="wFl-XS-fcJ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Transactions" id="Ulh-z9-ciB"/>
+                    <tabBarItem key="tabBarItem" title="Transactions" image="List - simple-line-icons" id="Ulh-z9-ciB" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="hoc-hr-8V2" id="cU5-QQ-aw5"/>
+                        </connections>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Transactions" id="NdO-Oi-yxe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kIT-bk-mJ6">
                             <connections>
@@ -93,6 +105,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6c-Uf-VUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="hoc-hr-8V2" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="3047" y="9"/>
         </scene>
@@ -100,13 +113,13 @@
         <scene sceneID="Jen-r2-9cp">
             <objects>
                 <tableViewController id="6FD-A7-rIG" customClass="AccountsTableViewController" customModule="Where_Is_My_Money_IOs" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Am1-Pa-z5k">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Am1-Pa-z5k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="fg9-FM-pdg" customClass="AccountTableViewCell" customModule="Where_Is_My_Money_IOs" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier2" id="fg9-FM-pdg" customClass="AccountTableViewCell" customModule="Where_Is_My_Money_IOs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fg9-FM-pdg" id="WQW-ix-R0j">
@@ -163,13 +176,49 @@
                                     <outlet property="titleLabel" destination="DqN-U5-Ioc" id="1Wz-JX-LSQ"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="ezp-QZ-eHV" detailTextLabel="0W8-VA-SDr" style="IBUITableViewCellStyleValue1" id="ZMM-1y-9dp">
+                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZMM-1y-9dp" id="awp-7g-izW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ezp-QZ-eHV">
+                                            <rect key="frame" x="15" y="40" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0W8-VA-SDr">
+                                            <rect key="frame" x="316" y="40" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="6FD-A7-rIG" id="9CJ-Pj-A7w"/>
                             <outlet property="delegate" destination="6FD-A7-rIG" id="YvM-Dy-IJL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Accounts" id="ij8-Uk-Bon"/>
+                    <tabBarItem key="tabBarItem" title="Accounts" image="Wallet - simple-line-icons" id="ij8-Uk-Bon" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="bw5-d0-584" id="FrS-bk-TXE"/>
+                        </connections>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Accounts" id="sZM-je-vVw">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dV5-mZ-fVE">
                             <connections>
@@ -179,6 +228,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDc-W1-LBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bw5-d0-584" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="3047.1999999999998" y="-779.46026986506752"/>
         </scene>
@@ -243,7 +293,19 @@
                             <outlet property="delegate" destination="PIP-pd-xpz" id="Waf-OV-Y2f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Categories" id="zkO-mA-viS"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="Tag - simple-line-icons" id="zkO-mA-viS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="wk7-HS-Yds" id="Dk9-6G-8Yg"/>
+                        </connections>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Categories" id="Leb-9A-P7X">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="klm-Nz-TnY">
                             <connections>
@@ -253,6 +315,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxD-8a-LZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="wk7-HS-Yds" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="3047" y="767"/>
         </scene>
@@ -288,7 +351,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Accounts" id="o6W-SG-4vJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wvw-nN-s90">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvw-nN-s90">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -307,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="1168.8" y="-779.46026986506752"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="24A-mf-DcF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DaA-qo-caa" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DaA-qo-caa" customClass="WISMMTabBarViewController" customModule="Where_Is_My_Money_IOs" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yC9-1H-u1h"/>
@@ -323,14 +386,169 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="signOutButton" destination="bQr-ST-wR6" id="nHH-dy-sNt"/>
                         <segue destination="6FD-A7-rIG" kind="relationship" relationship="viewControllers" id="a14-7H-FQh"/>
                         <segue destination="m57-db-eKI" kind="relationship" relationship="viewControllers" id="JBo-99-6uS"/>
                         <segue destination="PIP-pd-xpz" kind="relationship" relationship="viewControllers" id="m3H-4b-nfx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KU2-Dg-w7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Sign Out" id="bQr-ST-wR6">
+                    <connections>
+                        <action selector="signoutButtonPressed:" destination="DaA-qo-caa" id="nbU-iB-bqe"/>
+                    </connections>
+                </barButtonItem>
             </objects>
             <point key="canvasLocation" x="2108" y="-779.46026986506752"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="I7w-Ox-eXI">
+            <objects>
+                <viewController id="oEX-GP-4xd" customClass="LoginViewController" customModule="Where_Is_My_Money_IOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qBl-iY-2hf"/>
+                        <viewControllerLayoutGuide type="bottom" id="z6a-cO-ZfB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GaQ-oj-VOo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where's My Money?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rI6-Vp-sSW">
+                                <rect key="frame" x="16" y="72" width="343" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="fvQ-VV-2ag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vi-8Z-3A9">
+                                <rect key="frame" x="70" y="247" width="235" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5So-Yd-7oH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="oEX-GP-4xd" id="hoD-9b-Yud"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K9I-RS-54F">
+                                <rect key="frame" x="70" y="290" width="235" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ddD-5l-CH0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="oEX-GP-4xd" id="E85-M7-fSX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2N-Ng-t3Y">
+                                <rect key="frame" x="70" y="399" width="235" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="GJQ-Vb-PrY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpDidTouch:" destination="oEX-GP-4xd" eventType="touchUpInside" id="1I9-Tf-mBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEt-RD-UHw">
+                                <rect key="frame" x="70" y="345" width="235" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Wew-Te-Wf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginDidTouch:" destination="oEX-GP-4xd" eventType="touchUpInside" id="KB1-hx-dah"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="5kz-cp-r1E">
+                                <rect key="frame" x="275" y="354" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Vi-8Z-3A9" firstAttribute="leading" secondItem="GaQ-oj-VOo" secondAttribute="leadingMargin" constant="54" id="5R7-nM-3Zi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rI6-Vp-sSW" secondAttribute="trailing" id="EdS-tT-jnV"/>
+                            <constraint firstItem="K9I-RS-54F" firstAttribute="top" secondItem="8Vi-8Z-3A9" secondAttribute="bottom" constant="8" id="JAf-sm-3Xg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hEt-RD-UHw" secondAttribute="trailing" constant="54" id="KAl-tw-XRt"/>
+                            <constraint firstItem="hEt-RD-UHw" firstAttribute="top" secondItem="K9I-RS-54F" secondAttribute="bottom" constant="20" id="LNc-7M-spV"/>
+                            <constraint firstItem="rI6-Vp-sSW" firstAttribute="top" secondItem="qBl-iY-2hf" secondAttribute="bottom" constant="52" id="PgR-Wa-1Bx"/>
+                            <constraint firstItem="hEt-RD-UHw" firstAttribute="leading" secondItem="GaQ-oj-VOo" secondAttribute="leadingMargin" constant="54" id="RVx-b6-gZL"/>
+                            <constraint firstItem="K9I-RS-54F" firstAttribute="leading" secondItem="GaQ-oj-VOo" secondAttribute="leadingMargin" constant="54" id="SjO-18-YD4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Vi-8Z-3A9" secondAttribute="trailing" constant="54" id="Xdg-cS-HrJ"/>
+                            <constraint firstAttribute="centerX" secondItem="rI6-Vp-sSW" secondAttribute="centerX" id="dCe-wa-Kz4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I2N-Ng-t3Y" secondAttribute="trailing" constant="54" id="ga0-iP-Vzi"/>
+                            <constraint firstItem="5kz-cp-r1E" firstAttribute="leading" secondItem="hEt-RD-UHw" secondAttribute="trailing" constant="-30" id="hte-GI-pHD"/>
+                            <constraint firstItem="I2N-Ng-t3Y" firstAttribute="top" secondItem="hEt-RD-UHw" secondAttribute="bottom" constant="16" id="jeu-4U-u8z"/>
+                            <constraint firstItem="rI6-Vp-sSW" firstAttribute="leading" secondItem="GaQ-oj-VOo" secondAttribute="leadingMargin" id="meZ-3A-lhp"/>
+                            <constraint firstItem="I2N-Ng-t3Y" firstAttribute="leading" secondItem="GaQ-oj-VOo" secondAttribute="leadingMargin" constant="54" id="qmu-wl-l7V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K9I-RS-54F" secondAttribute="trailing" constant="54" id="s94-Ze-gll"/>
+                            <constraint firstItem="5kz-cp-r1E" firstAttribute="centerY" secondItem="hEt-RD-UHw" secondAttribute="centerY" id="wjy-Qw-wuY"/>
+                            <constraint firstItem="8Vi-8Z-3A9" firstAttribute="top" secondItem="rI6-Vp-sSW" secondAttribute="bottom" constant="116" id="wyX-AH-Z0k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="5kz-cp-r1E" id="VAB-44-CNW"/>
+                        <outlet property="loginButton" destination="hEt-RD-UHw" id="aUB-Kq-cIb"/>
+                        <outlet property="textFieldLoginEmail" destination="8Vi-8Z-3A9" id="0fK-h2-mlP"/>
+                        <outlet property="textFieldLoginPassword" destination="K9I-RS-54F" id="ncS-CU-7Vq"/>
+                        <segue destination="kuc-qm-igQ" kind="presentation" identifier="LoginToList" id="FAG-W0-pwM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcX-fk-0Gn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="-779"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="List - simple-line-icons" width="20" height="13"/>
+        <image name="Tag - simple-line-icons" width="20" height="21"/>
+        <image name="Wallet - simple-line-icons" width="20" height="19"/>
+    </resources>
 </document>
