@@ -55,9 +55,9 @@ People who already do some financial control in some other way can also benefit 
 I have decided try for the first time to use firebase realtime database, instead a relational database as sqllite.
 
 #### Describe any libraries you’ll be using and share your reasoning for including them.
-- Eureka [https://github.com/EurekaCommunity]
+- Eureka https://github.com/EurekaCommunity
   - to create easy forms 
-- RAMAnimatedTabBarController [https://github.com/Ramotion/animated-tab-bar]
+- RAMAnimatedTabBarController https://github.com/Ramotion/animated-tab-bar
   - to animate the tabbar
  
 
