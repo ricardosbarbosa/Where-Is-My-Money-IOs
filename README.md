@@ -50,6 +50,22 @@ People who already do some financial control in some other way can also benefit 
 
 ### User interfaces
 
+- Login
+<img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/0%20login.png" width="150">
+
+- Accounts
+
+<img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/1%20accounts.png" width="150"><img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/1.1%20new%20account.png" width="150">
+
+- Categories
+
+<img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/3%20categories.png" width="150"><img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/3.1%20new%20category.png" width="150">
+
+- Transactions
+
+<img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/2%20transactions.png" width="150"><img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/2.1%20incomes%20and%20expenses.png" width="150"><img src="https://github.com/ricardosbarbosa/Where-Is-My-Money-IOs/blob/master/screens/2.2%20transfers.png" width="150">
+
+
 ### Key Considerations
 #### How will your app handle data persistence?
 I have decided try for the first time to use firebase realtime database, instead a relational database as sqllite.
