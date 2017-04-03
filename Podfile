@@ -8,11 +8,9 @@ target 'Where Is My Money IOs' do
   # Pods for Where Is My Money IOs
   pod 'Firebase'
   pod 'Firebase/Database'
-  pod 'RAMPaperSwitch'
-  pod 'PermissionScope'
-  pod 'KCFloatingActionButton'
-  pod 'GearRefreshControl'
-  pod 'SnapKit', '~> 3.0'
+  pod 'Firebase/Auth'
+  pod 'Eureka', '~> 2.0.0-beta.1'
+  pod 'RAMAnimatedTabBarController', "~> 2.0.13" 
   
   target 'Where Is My Money IOsTests' do
     inherit! :search_paths
